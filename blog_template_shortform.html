@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DESCRIPTION — one or two sentences for search/social previews.">
+  <meta name="post-tag" content="shortform">
+  <title>TITLE — Niko McCarty</title>
+  <!--
+    Path note: this template assumes the file lives inside essays/.
+    All hrefs below use "../" prefixes. If you place it at the root,
+    remove the "../" from css, js, and nav hrefs.
+  -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ===================== SIDEBAR ===================== -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="../index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="../about.html">About</a>
+          <a href="../essays.html">Essays</a>
+          <a href="../shortform.html" class="active">Shortform</a>
+          <a href="../writing.html">Writing Elsewhere</a>
+          <a href="../bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ===================== CONTENT ===================== -->
+    <div class="content">
+      <main>
+        <a href="../shortform.html" class="back-link">&larr; Shortform</a>
+
+        <!-- ── Post header ── -->
+        <div class="post-header">
+          <h1>TITLE</h1>
+          <p class="post-meta">
+            MONTH DD, YEAR
+            <span class="post-meta-tag">shortform</span>
+          </p>
+        </div>
+
+        <!-- ── Post body ── -->
+        <!--
+          Shortform posts are brief — a few paragraphs at most.
+          Sidenotes work the same as in essays — see pattern below.
+          On mobile, all sidenotes are collected and shown at the
+          article footer automatically by main.js.
+        -->
+        <div class="post-body">
+
+          <!-- ════════════════════════════════════════
+               WRITE YOUR POST BELOW THIS LINE
+               ════════════════════════════════════════ -->
+
+          <p>Your shortform content goes here. Keep it brief — a few paragraphs.</p>
+
+          <!--
+            Sidenote pattern:
+              <label for="sn-1" class="sn-toggle"></label>
+              <input type="checkbox" id="sn-1" class="sn-checkbox">
+              <span class="sidenote">Note text here.</span>
+            Increment sn-1 → sn-2 → sn-3 for each note.
+          -->
+          <p>
+            Example with a sidenote.<label for="sn-1" class="sn-toggle"></label><input type="checkbox" id="sn-1" class="sn-checkbox"><span class="sidenote">This is a sidenote. On desktop it floats in the right margin. On mobile it appears at the bottom of the article.</span>
+          </p>
+
+          <p>
+            Link to something interesting:
+            <a href="https://example.com" target="_blank" rel="noopener">example.com</a>.
+          </p>
+
+          <!-- Optional: image
+          <figure>
+            <img src="../images/essays/YOUR-SLUG/figure1.png" alt="Descriptive alt text">
+            <figcaption>Caption text.</figcaption>
+          </figure>
+          -->
+
+        </div><!-- .post-body -->
+      </main>
+
+      <!-- ===================== FOOTER ===================== -->
+      <footer>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nikomc"
+          method="post"
+          class="bd-form bd-form--footer embeddable-buttondown-form"
+        >
+          <p class="bd-label">Join 10,000+ readers</p>
+          <div class="bd-row">
+            <input type="email" name="email" id="bd-email-footer" placeholder="your@email.com" required>
+            <input type="hidden" name="tag" value="nikomc.com">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="../feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div><!-- .content -->
+
+  </div><!-- .page -->
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
