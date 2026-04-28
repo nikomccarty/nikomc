@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OpenAI used GPT-5 to optimize Gibson Assembly. Here's what they actually did — and where I'd push back.">
+  <meta name="post-tag" content="essay">
+  <title>This OpenAI Wet-Lab Blog is Pretty Good — Niko McCarty</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="../index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="../about.html">About</a>
+          <a href="../essays.html" class="active">Essays</a>
+          <a href="../shortform.html">Shortform</a>
+          <a href="../writing.html">Writing Elsewhere</a>
+          <a href="../bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <a href="../essays.html" class="back-link">&larr; Essays</a>
+
+        <div class="post-header">
+          <h1>This OpenAI Wet-Lab Blog is Pretty Good</h1>
+          <p class="post-meta">
+            February 23, 2026 &middot; 7 min read
+            <span class="post-meta-tag">essay</span>
+          </p>
+        </div>
+
+        <div class="post-body">
+
+          <p>There's a&nbsp;<a href="https://openai.com/index/accelerating-biological-research-in-the-wet-lab/">recent blog from OpenAI</a>&nbsp;where they used GPT-5 to optimize a common biology experiment, called Gibson Assembly. I've seen criticisms online from people who say things like, "Who cares? A human totally could have done that" or whatever. And that's true. But I still think this blog is nice for a couple reasons.</p>
+
+          <p>First, faster iterations is one of the best ways to accelerate biotechnology progress more broadly. Experiments take much too long, and are often much too unreliable, for scientists to move quickly. Therefore, we should invest more resources toward optimizing and improving common methods that seem "mundane".</p>
+
+          <p>Second, this is a simple experimental system in which to test AI; indeed, that's the whole point! Gibson Assembly has been around for nearly two decades, is widely-used, and only requires three enzymes. It is therefore a natural fit for AI companies to benchmark their models on biological questions. (The parameter space is not too large!)</p>
+
+          <p>To understand what OpenAI actually did, I first need to tell you about Gibson Assembly, a common method biologists use to stitch DNA molecules together. Originally developed in 2009, most scientists use Gibson because it's dead simple: Everything works at one temperature (50°C) and it requires only three enzymes. The DNA molecules to be joined together are designed such that they have 15-40 nucleotides, at either end, which overlaps with the other DNA molecule. All the DNA is then added to a tube and an enzyme, exonuclease, "chews back" several dozen nucleotides from the 5' ends of each molecule, leaving behind long single-stranded "arms." These arms float around in the liquid, collide with a matching arm in another DNA sequence, and hug each other tightly. A second enzyme, DNA polymerase, runs along these touching DNA strands and fills in parts of the arms that don't overlap or are still single-stranded. Finally, DNA ligase seals the "nick" and heals the strands, thus forming a newly assembled, double-stranded piece of DNA.</p>
+
+          <p>OpenAI collaborated with a new biosecurity startup, Red Queen Bio (co-founded by&nbsp;<a href="https://locusmag.com/review/darkome-by-hannu-rajaniemi-review-by-niall-harrison/">Hannu Rajaniemi</a>, an excellent science fiction writer), to build the evaluation framework. The metric they settled on is called&nbsp;<em>cloning efficiency</em>, which just means this: For a fixed amount of input DNA (like one picogram) transformed into cells, how many colonies successfully grow and contain the correctly assembled DNA molecule? By the end of their blog post, the OpenAI team claims that they were able to boost this number 79x relative to a "baseline protocol" from&nbsp;<a href="https://www.neb.com/en-us">New England Biolabs</a>, or NEB, a common purveyor of the Gibson enzymes.</p>
+
+          <p>An important note is that OpenAI says no humans were involved in optimizing the reaction; all the humans did was carry out protocols generated by GPT-5, and also upload experimental results back into the model. They repeated this several times, coaxing the model to iterate each time. Their Gibson Assembly was remarkably simple, involving just two DNA molecules: a gene encoding a fluorescent protein and a plasmid to hold the gene.</p>
+
+          <p>(The OpenAI team, intriguingly, also set up a set up a robot to automate the Gibson Assembly and transformation, but couldn't get it to work as well as a human. "We compared the robot's work to human-performed experiments at each step. The robot successfully handled the transformation process…When compared directly with human-performed transformations, the robot generated similar quality data with equivalent improvements over baseline, showing early potential for automating and accelerating biological experiment optimization." However. "while the fold-changes between the robot and human experiments were similar, absolute colony counts from the robot were approximately ten-fold lower than manual execution.")</p>
+
+          <p>After several rounds of iteration, the model made two notable proposals:</p>
+
+          <p>First, it added two additional enzymes to the normal Gibson Assembly reaction. Specifically, it added "the recombinase RecA from E. coli, and phage T4 gene 32 single-stranded DNA‑binding protein (gp32)." The blog continues: "Working in tandem, gp32 smooths and detangles the loose DNA ends, and RecA then guides each strand to its correct match." This tweak improved the "cloning efficiency" metric by 14x over the standard NEB protocol.</p>
+
+          <p>Second, it made a subtle change to how the assembled DNA molecules were inserted into living cells. Specifically, GPT-5 told the humans to spin down cells in a centrifuge, thus forming a pellet, prior to transforming them. This is typically not recommended because competent cells are "fragile," but the OpenAI team writes that "the cells tolerated concentration well and the increased molecular collisions boosted transformation efficiency substantially (&gt;30-fold on final validation)."</p>
+
+          <p>Now, recall that at the start of this little blog I said I really liked this experiment! (Do not crucify me, ye AI optimists.) But no internet commentary is truly complete without some nitpicking, so here goes.</p>
+
+          <p>One criticism is that the largest improvement made by the model was not related to Gibson Assembly at all! It was related to how the DNA gets delivered into cells. And, indeed, prior studies have shown something similar. (<a href="https://portlandpress.com/bioscirep/article/33/6/e00086/55976/A-comparison-and-optimization-of-methods-and">This research paper</a>, for example, says that one of the best ways to improve transformation is to concentrate cells beforehand. Fair play to the OpenAI team for linking to this in their blog post.) And if you are a human reading this blog, and you are planning to spin down your competent cells before transformation, just be sure to aliquot everything into small tubes first; repeated spins will, over time, kill everything.</p>
+
+          <p>Another issue is that adding RecA and gp32 to a Gibson Assembly reaction complicates things quite a bit. For a normal Gibson reaction, everything comes in a single kit from NEB with the enzymes, and the whole experiment is done at one temperature: 50°C! But doing a Gibson Assembly this way would require one to buy purified RecA and gp32, and also change incubation temperatures to get everything working (RecA and gp32 work best at 37°C.) This is more expensive and more complicated, but maybe worthwhile in some cases.</p>
+
+          <p>And lastly, the selected metric — namely, how many colonies one gets from a given amount of DNA — doesn't actually seem all that useful in most scenarios. A scientist stitching together two strands of DNA doesn't actually care if they only get five colonies because, often, they only need to get ONE colony that works, and then they can grow up those cells in large beakers and extract a huge amount of the plasmid. A more useful metric might be to increase the total&nbsp;<em>number</em>&nbsp;of unique DNA strands that can be joined together in a single Gibson Assembly reaction, without reducing overall quality, instead.</p>
+
+          <p>Still, I liked this blog post as a whole. I'm glad people are optimizing the "small" things, and I don't blame OpenAI for not trying to solve cancer, in its overwhelming magnitude of manifestations, on their first attempt! Gibson Assembly is a much better starting point.</p>
+
+        </div>
+      </main>
+
+      <footer>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nikomc"
+          method="post"
+          class="bd-form bd-form--footer embeddable-buttondown-form"
+        >
+          <p class="bd-label">Join 10,000+ readers</p>
+          <div class="bd-row">
+            <input type="email" name="email" id="bd-email-footer" placeholder="your@email.com" required>
+            <input type="hidden" name="tag" value="nikomc.com">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="../feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A tiny microfluidic device lets you watch a single cell divide hundreds of times — and yet almost nobody uses it. Here's why that should change.">
+  <meta name="post-tag" content="essay">
+  <title>Where is my Mother Machine? — Niko McCarty</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="../index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="../about.html">About</a>
+          <a href="../essays.html" class="active">Essays</a>
+          <a href="../shortform.html">Shortform</a>
+          <a href="../writing.html">Writing Elsewhere</a>
+          <a href="../bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <a href="../essays.html" class="back-link">&larr; Essays</a>
+
+        <div class="post-header">
+          <h1>Where is my Mother Machine?</h1>
+          <p class="post-meta">
+            March 31, 2026 &middot; 8 min read
+            <span class="post-meta-tag">essay</span>
+          </p>
+        </div>
+
+        <div class="post-body">
+
+          <p>There is a tiny device (first invented almost two decades ago) that lets you watch a single cell divide hundreds of times, under tightly-controlled conditions, and yet I almost never meet people who actually use it. This is a shame because there&#8217;s many interesting ideas that I think could be uniquely tested in such a device.</p>
+
+          <p>Most experiments in biology are instead done in &#8220;bulk,&#8221; which is not a good way to deeply understand an organism. RNA-seq experiments, for example, are often done by growing lots of cells in a flask, exposing them to some chemical, and then killing all the cells, extracting their RNAs, and sequencing all of them <em>together</em>. The end result of this is just an average, and it completely obscures the messier (and more truthful) stochastic nature of life.</p>
+
+          <p>But a&nbsp;<a href="https://jun.ucsd.edu/mother_machine.php">Mother Machine</a>, and other microfluidics tools like it, helps to solve this problem. It&#8217;s just a tiny device with a long trench through which nutrients flow. Cells travel down this trench and fall into little wells, etched perpendicularly to the main trench. Each of these wells is&nbsp;<em>barely</em>&nbsp;wide enough for a bacterium to fall inside. When a cell falls into a well, it keeps dividing and also has access to fresh nutrients, which are constantly pumped through. Waste molecules are continuously flushed out. As one cell divides into two, then four, then eight, and so on, some cells eventually extend out of the well entirely and get swept away with the current. The cell at the bottom, though, stays put and will keep dividing.</p>
+
+          <p>Like many other &#8220;great&#8221; inventions, the Mother Machine was designed to answer a specific question. In a&nbsp;<a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.0030045">2005 paper</a>, some scientists claimed that, when a cell divides, whichever offspring inherits the &#8220;old pole&#8221; from the mother divides about 2 percent slower with each passing generation. (Said another way: When an&nbsp;<em>E. coli</em>&nbsp;cell divides, it builds a wall down the middle and cuts itself in two at that point. Each &#8220;daughter&#8221; cell has two ends; one end is made from the wall, and the other end is &#8220;old.&#8221; This old end gets passed down through the generations, again and again. The authors of the 2005 paper claimed that this constitutes a form of cellular aging, and that cells which inherit the old end are basically less fit than the other daughter cell. <em>Provocative claim!</em>)</p>
+
+          <p>The Mother Machine was invented by a small team at Harvard to disprove this hypothesis. In the&nbsp;<a href="https://www.cell.com/current-biology/fulltext/S0960-9822(10)00524-5">2010 paper</a>&nbsp;describing the device, they basically just strapped a camera to the microfluidics chip and recorded the growth rate for tens of thousands of cells, under constant nutrient conditions, for &#8220;hundreds of generations.&#8221; After tallying all the data, they concluded that &#8220;<em>E. coli</em>, unlike all other aging model systems studied to date, has a robust mechanism of growth that is decoupled from cell death.&#8221; In other words, growth does not slow down with age, and the 2005 claims were wrong.</p>
+
+          <p>Other groups have since made modifications to the original device, using it to revisit classic experiments in molecular biology. In 2018, for example, a Swiss team&nbsp;<a href="https://www.nature.com/articles/s41467-017-02505-0">modified the microfluidic chip</a>&nbsp;to have two input channels, rather than just the one. With two ports, they could expose cells to different growth media at the same time. Or they could switch back-and-forth between the two conditions, or even expose cells to&nbsp;<em>gradients</em>&nbsp;of those conditions.</p>
+
+          <p>Now, it has been known since the 1960s that&nbsp;<em>E. coli</em>&nbsp;cells prefer to eat glucose over lactose. When glucose runs out and only lactose is around, the cells activate their&nbsp;<em>lac</em>&nbsp;operon and begin making enzymes to digest it. Jacques Monod and Fran&ccedil;ois Jacob&nbsp;<a href="https://www.nobelprize.org/prizes/medicine/1965/summary/">shared a Nobel Prize</a>, in 1965, for figuring this out. But nobody had ever actually watched this &#8220;switch&#8221; at the level of single cells, under tightly-controlled conditions.</p>
+
+          <p>But then the Swiss team made their modified Mother Machine. They flooded&nbsp;<em>E. coli</em>&nbsp;cells into the device, trapped them in wells, and switched the inputs between glucose and lactose every four hours. And what they found is that, when lactose comes in to replace glucose, every cell stops growing within three minutes. This outcome is extremely uniform! But the reverse &#8212; or the time it takes each cell to switch on its&nbsp;<em>lac</em>&nbsp;operon &#8212; is extremely variable. About one-fourth of cells start growing within 25&#8211;45 minutes, two-thirds start growing in one-to-three hours, and five percent of cells never grow again at all. By accounting for cells individually, in other words, the Mother Machine enabled these researchers to make observations which could never be made at the population-scale.</p>
+
+          <p>And yet, Mother Machines still seem relatively rare! The blueprints are freely available online, but making these devices still requires an understanding of photolithography. The wells are only a micron wide, so they can&#8217;t be 3D-printed; one has to make a master mold using photomasks, cast PDMS in that mold, and then cure the polymer into that shape. The original specs only work for&nbsp;<em>E. coli</em>, too. If you wanted to study&nbsp;<em>Bacillus</em>&nbsp;or&nbsp;<em>Caulobacter</em>&nbsp;or yeast, you&#8217;d have to redesign the channels with different dimensions. A few companies sell Mother Machines, but they seem to be quite small.</p>
+
+          <p>If Mother Machines&nbsp;<em>did</em>&nbsp;become widespread, though (maybe even cheap enough to ship in, say, a $100 kit for students) they could be used to run all kinds of interesting experiments.</p>
+
+          <p>One idea is to combine a Mother Machine with a hypermutation tool, such that we can watch cells evolve in real-time. In a recent study, British scientists reported a way to do &#8220;<a href="https://www.nature.com/articles/s41587-025-02944-x">highly mutagenic continuous evolution</a>&#8221; in&nbsp;<em>E. coli</em>. The beauty of their tool is that it only requires two components: an error-prone DNA polymerase, and a replicon carrying a gene of interest. The error-prone polymerase, which introduces about one mutation per 1,000 bases every ten generations,&nbsp;<em>only</em>&nbsp;copies the DNA on the replicon; it doesn&#8217;t touch the host genome. One could take a gene encoding antibiotic resistance (against molecule X) and clone it onto the replicon, transform the whole thing into&nbsp;<em>E. coli</em>, and trap the cells inside a Mother Machine. Then, by exposing the cells to increasing levels of antibiotic Y, one could watch in real time as cells mutate their resistance gene and, perhaps, hit upon a solution that confers resistance against both molecules. This would be a way to study how cells evolve resistance&nbsp;<em>autonomously</em>, at the single-cell level.</p>
+
+          <p>Another idea is to use Mother Machines to study how perturbations change a cells&#8217; transcriptome in real-time. Felix Horns (previously in Michael Elowitz&#8217;s group at Caltech, now at&nbsp;<a href="https://arcinstitute.org/labs/hornslab">Arc Institute</a>) created an&nbsp;<a href="https://www.cell.com/cell/fulltext/S0092-8674(23)00689-X">RNA Exporter</a>&nbsp;tool. The gist is that genes encoding virus-like particles are placed into cells and, when these particles get made, they latch onto RNA molecules and physically carry them out of the cell. Cells are effectively engineered to export their own RNA.</p>
+
+          <p>My understanding is that RNA Exporters are relatively unbiased, meaning they have a roughly equal chance of grabbing onto any RNA molecule. The molecules that get carried from the cell, then, are representative of the transcriptome as a whole. If cells carrying RNA Exporters were studied in a Mother Machine, it might be possible to perturb them and measure their transcriptional responses in&nbsp;<em>real time</em>&nbsp;&#8212; rather than the classical approach of perturbing millions of cells at once in a flask and doing RNA-seq on the entire population to collect average results.</p>
+
+          <p>A third idea is to collect single-cell observations to train a predictive model for molecular burden. Any time we engineer an organism to carry new genes, we are forcing it to execute a function it wouldn&#8217;t normally do, thus draining resources that would otherwise go toward growth, DNA repair, and so on. Perhaps we could take 100+ plasmids, each carrying a fluorescent protein, and clone all of them into the same strain of&nbsp;<em>E. coli</em>. Then we could study each strain inside a Mother Machine, carefully quantifying growth rates&nbsp;<em>and</em>&nbsp;fluorescence levels, to map out the full distribution of outcomes for a given plasmid. If we did this enough times (hopefully with some kind of automated data pipeline) we could collect a huge dataset. The resulting model could also help bioengineers design constructs that impose less of a burden on living cells.</p>
+
+          <p>I&#8217;m not entirely sure why we&#8217;re not seeing more of these ideas implemented, or why bioengineers still haven&#8217;t fully embraced single-cell experiments. Every university should have a microfluidics facility making custom devices, but I&#8217;ve only visited a few of them. Most experiments are still done in bulk, using orders-of-magnitude more cells and reagents than microfluidics would require; and usually the results are less representative of ground truth, too!</p>
+
+          <p>It&#8217;s a shame, because one of the beautiful things about biology is that each cell is unique and lots of molecular phenomena are highly stochastic, following a distribution of outcomes. Biology is fun because it is not deterministic; and that makes it both richer as a field of study but also more complicated as an engineering medium. A Mother Machine, and other tools like it, help us to actually see these distributions, and we ought to embrace them at scale.</p>
+
+        </div>
+      </main>
+
+      <footer>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nikomc"
+          method="post"
+          class="bd-form bd-form--footer embeddable-buttondown-form"
+        >
+          <p class="bd-label">Join 10,000+ readers</p>
+          <div class="bd-row">
+            <input type="email" name="email" id="bd-email-footer" placeholder="your@email.com" required>
+            <input type="hidden" name="tag" value="nikomc.com">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="../feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

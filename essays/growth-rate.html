@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A single equation explains why Vibrio natriegens divides every 9.8 minutes — and points toward how to make cells grow faster.">
+  <meta name="post-tag" content="essay">
+  <title>One Equation for Faster-Growing Cells — Niko McCarty</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="../index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="../about.html">About</a>
+          <a href="../essays.html" class="active">Essays</a>
+          <a href="../shortform.html">Shortform</a>
+          <a href="../writing.html">Writing Elsewhere</a>
+          <a href="../bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <a href="../essays.html" class="back-link">&larr; Essays</a>
+
+        <div class="post-header">
+          <h1>One Equation for Faster-Growing Cells</h1>
+          <p class="post-meta">
+            March 15, 2026 &middot; 12 min read
+            <span class="post-meta-tag">essay</span>
+          </p>
+        </div>
+
+        <div class="post-body">
+
+          <p>Biologists are obsessed with records.</p>
+
+          <p>We like to learn about the smallest and biggest cells, the animals that live longest, and the birds which migrate furthest. Perhaps this is an intrinsic part of Human Nature; but a part of me &#8212; deep down &#8212; wants to resist it. I&#8217;ll not be a stamp collector, I think, or mere record keeper! No; I shall study the mundane and the average, such that I can understand life as it really is, or at least&nbsp;<em>usually</em>&nbsp;is, on this beautiful Earth.</p>
+
+          <p>And yet, what&#8217;s the fun in averages? I think there is something about &#8220;records,&#8221; and our hunt for them, that serves a valuable purpose. Indeed, records are often a starting point for a deeper curiosity.</p>
+
+          <p>When we learn of an organism that lives for hundreds of years, or first hear that elephants do not get cancer despite the abundance of cells in their bodies, it is only natural to think, &#8220;Wait, then why do humans get cancer? We have way fewer cells than elephants!&#8221; In this way, records become a starting point toward rich questions.</p>
+
+          <p>But the record I think about most is cell division; specifically, why an obscure microbe &#8212; called&nbsp;<em>Vibrio natriegens</em>&nbsp;&#8212; is able to divide every 9.8 minutes and not a moment sooner.</p>
+
+          <p><em>V. natriegens</em>&nbsp;was first isolated by William Payne, a professor at the University of Georgia, from a glob of mud on Sapelo Island in 1958. Four years later, a man named R.G. Eagon incubated these cells at 37&deg;C, shaking them vigorously in a liquid broth containing blended bits of brains and hearts. It was Eagon who found, in this experiment, that the cells&nbsp;<a href="https://journals.asm.org/doi/10.1128/jb.83.4.736-737.1962">divided every 9.8 minutes</a>. This must have been a startling discovery, because the&nbsp;<a href="https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000808#s4">average microbe</a>&nbsp;divides every three hours or so. Some microbes, living deep in the Earth&#8217;s crust, divide once every few years.</p>
+
+          <p>It has been more than 60 years since Eagon made his discovery, and yet nobody has found a microbe which grows faster than <em>V. natriegens</em>. Is 9.8 minutes some kind of magical threshold; a speed limit to life&#8217;s replication? I don&#8217;t think so. And the reason I say so is because of a single equation, the parameters of which may actually reveal how to make cells grow faster.</p>
+
+          <h2>False Assumption</h2>
+
+          <p>My first assumption was that a cell&#8217;s division time is limited by DNA replication. For one cell to become two, the cell must copy its genome and pass one copy to each offspring. The bigger the genome, the longer it takes to make a copy, and the slower a cell divides. Right?</p>
+
+          <p>Not quite. The enzyme responsible for copying the genome, called DNA polymerase, moves at roughly 1,000 bases per second.&nbsp;<em>V. natriegens</em>&nbsp;has about 5.17 million bases in its genome, split across two chromosomes. The first chromosome has 3.25 million bases, and the second has 1.93 million bases. At normal speed, one polymerase would need 54 minutes to copy the first chromosome and 32 minutes to copy the second.</p>
+
+          <p>For years, many researchers thought that splitting the genome across two chromosomes was what enables&nbsp;<em>V. natriegens</em>&nbsp;to grow fast. With two chromosomes (so their thinking went), two polymerases can copy the genome in parallel, thus cutting division times in half! But then a&nbsp;<a href="https://www.mpg.de/21897436/cell-division-at-record-speed">2024 paper</a>&nbsp;came out, explaining how researchers had fused both chromosomes into a single genome, and the cells still divided every nine minutes.&nbsp;So clearly that&#8217;s not the bottleneck here.</p>
+
+          <p>The truth is that cells don&#8217;t use a single DNA polymerase to copy their genomes. Instead, two polymerases copy the genome at the same time, albeit in opposite directions. This bidirectional copying also happens <em>many times simultaneously</em>. As soon as one set of DNA polymerases begin copying the chromosome, another set latches on and starts copying it, too. Multiple copies of the genome are thus in the act of being made at any given moment. When one cell becomes two, each &#8220;daughter&#8221; not only inherits a genome, but also inherits the copies of that genome that are in the act of being made.</p>
+
+          <p>DNA replication is not the bottleneck to cell division. In theory, a cell could initiate dozens of rounds of DNA replication all at once, provided it has enough energy and nucleotides to do so.</p>
+
+          <p>The true bottleneck, it turns out, are actually the ribosomes, or big &#8220;machines&#8221; (a tired metaphor, I know) that build proteins. Before a cell can split in two, it must double its pool of ribosomes so that each daughter cell has enough to survive. And as we&#8217;ll see, this is really slow.</p>
+
+          <p>Many students are taught to think of ribosomes as &#8220;proteins that build other proteins.&#8221; But two-thirds of a ribosome&#8217;s mass is RNA; not amino acids. Each ribosome is also built from two pieces, called the large and small subunits. These two pieces glom onto a strand of messenger RNA and &#8220;read&#8221; its code to build proteins. After a ribosome has finished making a protein, it falls off the messenger RNA, searches for a new strand, and begins building the next one.</p>
+
+          <p><em>E. coli</em> and <em>V. natriegens</em> have nearly identical ribosomes. In both, the small subunit contains a long strand of RNA, called ribosomal RNA, packed inside of 21 proteins. The large subunit has two strands of RNA (one short and another long) stuffed inside of 33 proteins. Of all the RNA molecules floating around a cell, about 80 percent are ribosomal. (Messenger RNAs account for only a tiny fraction.) In total, each ribosome contains 4,566 nucleotides of RNA and 54 separate proteins, totaling 7,500 amino acids. This is enormous; an average protein has about 300 amino acids. Once built, each ribosome can &#8220;stitch together&#8221; about 16 amino acids per second.</p>
+
+          <p>Now, I know there are a lot of numbers here. But recall that&nbsp;<em>V. natriegens</em>&nbsp;divides every 9.8 minutes, and consider what happens when we crunch the numbers on how long it takes a ribosome to build a copy of itself:</p>
+
+          <p>There are 7,500 amino acids in a ribosome, and each ribosome stitches 16 amino acids together each second. Therefore, it takes one ribosome about 7 minutes and 50 seconds to build another ribosome; and&nbsp;<em>V. natriegens</em>&nbsp;divides every 9.8 minutes! That gap of about two minutes is all the time the cell has to make&nbsp;<em>everything else</em>: copying DNA, growing its lipid membrane, and building all the other proteins it needs to survive. Ribosome biosynthesis is the true bottleneck on cell division. No organism can divide faster than the time it takes to make its own ribosomes.</p>
+
+          <p>If this explanation strikes you as too tidy, though, you are certainly not alone. I had the same reaction at first. And one question I began thinking about is this: Sure, it takes <em>one</em> ribosome about eight minutes to make <em>one</em> ribosome. But each cell has tens of thousands of ribosomes. Those ribosomes all work together, in parallel, to make more ribosomes. Because the 7,500 amino acids required to build each ribosome are split across 54 different proteins, 54 ribosomes could (in theory) work together to build each new ribosome.</p>
+
+          <p>But this is only true at the level of&nbsp;<em>one</em>&nbsp;ribosome. If we zoom out to the whole cell, the math doesn&#8217;t work out quite this cleanly. For a cell to go from R ribosomes to 2R, it must build R ribosomes, and it only has R ribosomes to do this. Each ribosome, on average, must make one other ribosome; and that takes about eight minutes.</p>
+
+          <p>(Parallelization works when you can add more &#8220;machines&#8221; independent of output but, in this case, the &#8220;machines&#8221; are also the output.)</p>
+
+          <table>
+            <thead>
+              <tr><th>Category</th><th>Metric</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>DNA Polymerase</strong></td><td>Speed</td><td>~1,000 bases/second</td></tr>
+              <tr><td><strong><em>V. natriegens</em> Genome</strong></td><td>Total size</td><td>5.17 million bases</td></tr>
+              <tr><td></td><td>Number of chromosomes</td><td>2</td></tr>
+              <tr><td></td><td>Chromosome 1</td><td>3.25 million bases</td></tr>
+              <tr><td></td><td>Chromosome 2</td><td>1.93 million bases</td></tr>
+              <tr><td><strong>Replication Time</strong> (single polymerase)</td><td>Chromosome 1</td><td>54 minutes</td></tr>
+              <tr><td></td><td>Chromosome 2</td><td>32 minutes</td></tr>
+              <tr><td><strong>Cell Division</strong></td><td><em>V. natriegens</em> division time</td><td>9.8 minutes</td></tr>
+              <tr><td><strong>Ribosome Composition</strong></td><td>Total ribosomal RNA</td><td>4,566 nucleotides</td></tr>
+              <tr><td></td><td>Total proteins</td><td>54</td></tr>
+              <tr><td></td><td>Total amino acids</td><td>7,500</td></tr>
+              <tr><td><strong>Ribosome Speed</strong></td><td>Translation rate</td><td>~16 amino acids/second</td></tr>
+              <tr><td></td><td>Time for one ribosome to build one ribosome</td><td>7 min 50 sec</td></tr>
+            </tbody>
+          </table>
+
+          <p>This raises other questions, too; like rather than fully double its ribosome pool, why doesn&#8217;t a dividing cell give fewer ribosomes to each daughter?</p>
+
+          <p>A cell&nbsp;<em>could</em>&nbsp;do this. But doing so would mean each daughter cell then needs to &#8220;catch up&#8221; and make more ribosomes so it can grow at its maximum capacity again. Cells must devote about half their ribosomes toward making the various proteins needed to sustain life (not ribosomes). If a cell devotes too many ribosomes toward making other ribosomes, it will not be able to sustain its metabolism, or make energy, or copy its genome, or all that other stuff. Short-shifting daughter cells, then, is just passing a problem down to future generations.</p>
+
+          <p>So the ribosome bottleneck holds, no matter how we come at it. But this makes&nbsp;<em>V. natriegens&#8217;</em>&nbsp;growth rate even more impressive. This microbe, pulled from a glob of mud in Georgia, has evolved a way to divide quite close to its theoretical, biophysical limit; mostly by <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC134863/pdf/1265.pdf">optimizing for ribosome biosynthesis</a>.</p>
+
+          <p>First, <em>V. natriegens</em> has at least a dozen ribosomal RNA operons, or gene clusters encoding ribosomal RNA molecules, in its genome.&nbsp;<em>E. coli</em>, for comparison, has seven. And second, these ribosome genes are located next to &#8220;strong&#8221; promoters, or genetic sequences that recruit RNA polymerase enzymes. In other words,&nbsp;<em>Vibrio</em>&nbsp;devotes&nbsp;<em>more</em>&nbsp;of its genome to ribosomal genes, and has also evolved a stronger &#8220;start&#8221; signal for those genes, meaning the cell makes ribosomal RNA much more frequently, and in higher numbers, than other microbes.</p>
+
+          <p>Scientists don&#8217;t fully understand <em>why</em>&nbsp;<em>V. natriegens</em>&nbsp;evolved to grow quickly, though. But remember that these cells were first discovered in nutrient-rich mud, on an obscure island off the coast of Georgia, where lots of organic matter washes up with the tide. As this tide flushes out, nutrients go with it. In their natural environment, then, these cells are exposed to ebbs and flows of nutrient-rich soup; cells that divide faster are able to &#8220;scoop up&#8221; more nutrients before it disappears. The end result, over millions of years, is that cells evolve to grow and consume as quickly as possible.</p>
+
+          <p>I can&#8217;t help but wonder why evolution &#8220;stopped&#8221; at 9.8 minutes, though, rather than the eight minutes it takes to theoretically double the ribosome pool. Those extra two minutes, it turns out, come from the fact that a dividing cell must make not only ribosomes, but also many other proteins, before it divides. A cell needs to make all the enzymes required for DNA replication, proteins to &#8220;pull apart&#8221; the chromosomes for each daughter cell, lipid molecules to grow the cell membrane, and so on. All of these things require proteins, which are made by ribosomes. And that&#8217;s why ribosomes can&#8217;t spend all their time making other ribosomes! (Even at maximum growth rates, most microbes only devote about one-third of their ribosomes toward making more ribosomes. The rest are used to build other things.)</p>
+
+          <p>Still, I wonder if cells could&nbsp;<a href="https://www.asimov.press/p/speed-limit">grow even faster</a>.</p>
+
+          <h2>Math &#8220;Knobs&#8221;</h2>
+
+          <p>The interesting thing about essays is that they describe phenomena in the English language, and thus are imprecise by their nature. I can work really hard to edit my sentences and make my words as clear as possible, but there will always be a chance that you, my reader, will be confused. Or, I could just simplify everything by giving a single equation which captures and explains the whole phenomenon. It turns out that this works remarkably well for cell division.</p>
+
+          <p>A few years ago, researchers at Caltech published a paper, titled &#8220;<a href="https://doi.org/10.1016/j.cels.2021.06.002">Fundamental limits on the rate of bacterial growth and their influence on proteomic composition.</a>&#8221; In it, they write down two simple, mathematical relationships. First, they note that the fraction of a cell&#8217;s mass devoted to ribosomes depends on how many ribosomes it has (of course) and how big those ribosomes are, relative to all the proteins in the cell. And second, for a cell to double in size, it must synthesize a cell&#8217;s worth of new protein, and the rate at which ribosomes do this determines how fast the cell grows.</p>
+
+          <p>By smashing these two relationships together, they arrived at a single equation &#8212; with just four parameters &#8212; that describes how quickly a cell will divide:</p>
+
+          <p style="text-align:center; font-style:italic; margin: 1.5em 0; font-size: 1.2em;">&#955; = (r<sub>t</sub> &middot; f<sub>a</sub> &middot; &Phi;<sub>R</sub>) / L<sub>R</sub></p>
+
+          <p>The left side, &#955;, is the cell&#8217;s growth rate, or number of times it divides per hour. On the right, there are four terms. r<sub>t</sub> is the translation elongation rate, or the speed at which a ribosome puts amino acids together; in most microbes, this is&nbsp;<a href="https://bionumbers.hms.harvard.edu/search.aspx?trm=translation+elongation">15&#8211;30</a> amino acids per second. f<sub>a</sub> is the fraction of ribosomes&nbsp;<em>actively</em>&nbsp;making proteins at any given moment. In a normal cell, at a narrow slice of time, about 15 percent of all ribosomes are idle. &Phi;<sub>R</sub> is the ribosomal mass fraction, or&nbsp;percentage of all proteins in the cell that are ribosomes. And&nbsp;L<sub>R</sub>, on the bottom, is the total number of amino acids in each ribosome.</p>
+
+          <p>The beauty of this equation &#8212; the reason it nearly brings a tear to my eye &#8212; is because it immediately explains both the <em>biophysical limits</em> of cell division and the <em>knobs</em>, or &#8220;dials,&#8221; by which we can change it. We can intuit, for example, that f<sub>a</sub> must always be less than 1.0, because some ribosomes will always be between jobs, searching for their next strand of messenger RNA. And &Phi;<sub>R</sub> must be less than 1.0, too, because a cell made entirely of ribosomes is a cell without a metabolism, membrane, and so on. Both of these parameters have hard ceilings.</p>
+
+          <p>To get a feel for what&#8217;s biologically plausible, let&#8217;s plug in some back-of-the-envelope numbers for <em>V. natriegens</em>:</p>
+
+          <p>r<sub>t</sub> = 20 amino acids per second<br>
+          f<sub>a</sub> = 0.85 active ribosomes<br>
+          &Phi;<sub>R</sub> = 0.50 of protein mass is ribosomes<br>
+          L<sub>R</sub> = 7,500 amino acids per ribosome</p>
+
+          <p>Crunching these numbers, we get &#955; = 4.08 h<sup>&#8722;1</sup>, or a doubling time of 10.2 minutes; remarkably close to what Eagon measured in 1962!</p>
+
+          <p>The nice thing about mathematical equations, like this, is that they not only point at biophysical limits, but also reveal which parameters can be <em>tweaked</em> to change the results. Now that we know the four parameters which set growth rate, in other words, we can begin to dream up clever ways to tune each &#8220;knob&#8221; to make cells grow faster or slower.</p>
+
+          <p>One option is to engineer ribosomes such that they literally build proteins faster. If we could raise the r<sub>t</sub> parameter to 30 or more (as some other microbes have), then division time goes down. Or, alternatively, we could try and make ribosomes smaller. Researchers have already explored this for&nbsp;<em>E. coli</em>.&nbsp;In 2002, researchers studied which proteins &#8212; of the 54 found in the&nbsp;<em>E. coli</em>&nbsp;ribosome &#8212; were &#8220;conserved&#8221; across other bacteria, archaea, and eukaryotes. In other words, they wanted to figure out&nbsp;<a href="https://www.sciencedirect.com/science/article/abs/pii/S0022283602005685">which proteins show up</a>&nbsp;again and again across species, and which proteins were only found in a few species (and, thus, might be disposable.)</p>
+
+          <p>They found that about 21 of <em>E. coli</em>&#8217;s ribosomal proteins show up in bacteria, but not archaea or eukaryotes, and some could plausibly be trimmed. I&#8217;m not aware of anyone who has actually tried this, but I wouldn&#8217;t be surprised if we could cut out, say, 20 percent of the ribosome without impacting its function too much, and thus shave a couple minutes from the theoretical cell division time. Somebody should try this!</p>
+
+          <p>Another option is to raise f<sub>a</sub> by boosting the fraction of &#8220;active&#8221; ribosomes within the cell. Protein synthesis is the most energetically expensive thing a cell does, so many organisms have evolved mechanisms to shut ribosomes down when they are not needed, thus conserving energy.&nbsp;<em>E. coli</em>, for example, carry &#8220;hibernation factors,&#8221; proteins that grab onto ribosomes and push them into an inactive form when they are not needed. It&#8217;s not known if&nbsp;<em>V. natriegens</em>&nbsp;encode the same proteins, but we could search through their genome and delete similar genes to test this theory.</p>
+
+          <p>Or, perhaps, we could take a more agnostic approach and just let evolution take its course, albeit in an accelerated way. If&nbsp;<em>Vibrio</em>&nbsp;evolved with slow ocean tides, maybe we could make them evolve even faster in the laboratory. Perhaps we could run a&nbsp;<a href="https://en.wikipedia.org/wiki/Richard_Lenski">Richard Lenski</a>-esque experiment, in which&nbsp;<em>V. natriegens&#8217;</em>&nbsp;cells are grown in a robotic bioreactor and flooded with glucose every few hours, followed by stretches of nutrient starvation. If we repeat this lots of times, some microbes may evolve to grow even faster during those periods of high glucose. Or maybe not; <em>V. natriegens</em>&nbsp;may already be quite close to the theoretical cell division time limit.</p>
+
+          <p><strong>These experiments haven&#8217;t been done yet.</strong> But that, in a way, is the whole point.</p>
+
+          <p>I never planned to write this essay, which emerged entirely by accident, with one question leading to another, until I found myself deep in the weeds of ribosomes and biophysics and growth rates. What surprised me most, in the end, was that the clearest answer to my question was found not in words, but rather in a single equation with just four parameters. Biology, at its limits, can often be described best with mathematics.</p>
+
+          <p>This equation only exists because generations of biophysicists heard about a record set by a microbe pulled from Georgia mud in 1958 and couldn&#8217;t let it go. They spent decades modeling ribosome fractions and translation rates; not because anyone asked them to, but because the record raised questions which bothered them and they wanted desperately to answer. Eventually, they wrote down an equation that not only explains why&nbsp;<em>V. natriegens</em>&nbsp;divides as fast as it does, but points toward how we might push it further still.</p>
+
+          <p>Records, it turns out, are not merely trivia, but rather a map toward the loose threads that, when pulled, unravel something remarkable about the world.&nbsp;In glorifying the exceptional, we can find answers to the mundane.</p>
+
+        </div>
+      </main>
+
+      <footer>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nikomc"
+          method="post"
+          class="bd-form bd-form--footer embeddable-buttondown-form"
+        >
+          <p class="bd-label">Join 10,000+ readers</p>
+          <div class="bd-row">
+            <input type="email" name="email" id="bd-email-footer" placeholder="your@email.com" required>
+            <input type="hidden" name="tag" value="nikomc.com">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="../feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

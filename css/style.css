@@ -596,6 +596,9 @@ h3 { font-size: 1rem;    margin-bottom: 0.4rem; margin-top: 1.8rem; }
   color: var(--muted);
 }
 
+/* Mobile-only sidenote footer — hidden on desktop, shown in media query */
+.sn-footer { display: none; }
+
 /* ============================================================
    Interactive JS components
    ============================================================ */
@@ -672,7 +675,6 @@ h3 { font-size: 1rem;    margin-bottom: 0.4rem; margin-top: 1.8rem; }
 .bd-form .bd-row {
   display: flex;
   gap: 0.6rem;
-  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -815,6 +817,7 @@ footer a:hover { text-decoration: underline; }
 
   /* Mobile sidenote footer block */
   .sn-footer {
+    display: block;
     margin-top: 2.5rem;
     padding-top: 1rem;
     border-top: 1px solid var(--border);
@@ -853,11 +856,11 @@ footer a:hover { text-decoration: underline; }
     padding-top: 0.1em;
   }
 
+  /* Buttondown form: stack on mobile */
+  .bd-form .bd-row { flex-direction: column; align-items: stretch; }
+  .bd-form input[type="submit"] { width: 100%; }
+
   /* Post list */
   .post-list li { flex-wrap: wrap; gap: 0.2rem; }
   .post-list .post-date { min-width: unset; }
-
-  /* Buttondown */
-  .bd-form .bd-row { flex-direction: column; align-items: stretch; }
-  .bd-form input[type="submit"] { width: 100%; }
 }

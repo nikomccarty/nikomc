@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PCR has remained essentially unchanged for 40 years. It turns out there's a good reason for that.">
+  <meta name="description" content="Photonic PCR can run 40 cycles in six minutes. But there are several reasons why it's unlikely to catch on — and why PCR is already surprisingly close to optimal.">
   <meta name="post-tag" content="essay">
   <title>PCR is a (Surprisingly) Near-Optimal Technology — Niko McCarty</title>
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -11,7 +11,6 @@
     (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
   </script>
   <link rel="stylesheet" href="../css/style.css">
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -61,84 +60,115 @@
         <div class="post-header">
           <h1>PCR is a (Surprisingly) Near-Optimal Technology</h1>
           <p class="post-meta">
-            April 22, 2026 &middot; 8 min read
+            April 22, 2026 &middot; 14 min read
             <span class="post-meta-tag">essay</span>
           </p>
         </div>
 
         <div class="post-body">
-          <p>
-            The polymerase chain reaction turns 40 years old this year. In most fields, a technique that old would be a historical curiosity, long since replaced by something faster, cheaper, or more precise. But PCR is still everywhere — in hospitals, crime labs, field kits, and every molecular biology lab on earth. Why hasn't it been superseded?
-          </p>
 
-          <p>
-            The short answer is that PCR is close to the theoretical optimum for what it does. It amplifies a specific DNA sequence from a complex mixture with exceptional sensitivity and specificity.<label for="sn-1" class="sn-toggle"></label><input type="checkbox" id="sn-1" class="sn-checkbox"><span class="sidenote">Sensitivity means it can detect a single molecule in a sample. Specificity means it amplifies only the target sequence and not off-target ones — assuming primer design is good.</span> The basic thermodynamic constraints — DNA melting temperatures, primer annealing kinetics, polymerase extension rates — don't change regardless of what technology you use. PCR found a near-optimal path through that constraint landscape in 1985, and there isn't much room to improve.
-          </p>
+          <p><strong>I.</strong></p>
 
-          <h2>How PCR works</h2>
+          <p>Writing is an act of discovery. Sometimes you sit down, intent on making a specific argument, only to find (upon deeper research) that the argument is garbage and doesn&#8217;t hold up to scrutiny! Writing has a beautiful tendency to reveal holes in one&#8217;s logic, as it did for this essay.</p>
 
-          <p>
-            Each PCR cycle has three steps: denaturation (heating to ~95°C to separate the two DNA strands), annealing (cooling to ~55–65°C so short primer sequences bind to the separated strands), and extension (72°C so a polymerase enzyme copies each strand from the primer).<label for="sn-2" class="sn-toggle"></label><input type="checkbox" id="sn-2" class="sn-checkbox"><span class="sidenote">The exact temperatures depend on the GC content and length of your primers. Higher GC content raises the melting temperature.</span> After 30 cycles, you have roughly 2<sup>30</sup> — about one billion — copies of the target sequence.
-          </p>
+          <p>Initially, the goal was to make a long argument about how polymerase chain reaction, or PCR, hasn&#8217;t changed basically at all since 1987, when the first &#8220;modern&#8221; thermocycler machines were released. The thesis was that there must be many ways to make PCR significantly faster, cheaper, better. This argument is roughly correct, but not to the degree anticipated. Time-savings with new PCR technologies are modest, and scientists are reluctant to buy cheap PCR machines for a few reasons (more on that later).</p>
 
-          <p>
-            The key insight of Kary Mullis, who won the Nobel Prize for inventing PCR, was to use a heat-stable polymerase isolated from <em>Thermus aquaticus</em>, a bacterium that lives in hot springs. Earlier attempts at the technique failed because the polymerase was destroyed by the high temperatures needed for denaturation.
-          </p>
+          <p>And yet, this essay still seemed worth writing. The inspiration stemmed from two ideas submitted for the <a href="bounty-results.html">Fast Biology Bounties</a> &#8212; from Sebastian Cocioba and &#8220;Utah&#8221; Hans &#8212; about plans to create photonic PCR machines. The gist of photonic PCR is that you can use LED lights or lasers to rapidly heat samples, thus running 40 cycles of DNA amplification in the span of 6 minutes. I gave out $3,500 in microgrants to support these ideas, courtesy of Astera Institute.</p>
 
-          <h2>The exponential explorer</h2>
+          <p>Faster PCR may not seem like a particularly desirable problem to work on. But it&#8217;s important for a few reasons. First, even a marginal improvement to a widespread method can have huge downstream effects on scientific productivity as a whole. And second, as more biology experiments get automated, and robots run these experiments 24/7, those time improvements will scale exponentially. Trimming 20 minutes off PCR may not be a big deal to human scientists, but it might matter a lot to robots!</p>
 
-          <p>
-            The exponential amplification in PCR is what makes it so powerful. Adjust the sliders below to see how cycle count and efficiency interact.
-          </p>
+          <p>It turns out, though, that many of my (weakly held) assumptions were quickly overturned. As exciting as photonic PCR seems, I think it&#8217;s unlikely to show up in academic labs anytime soon.</p>
 
-          <div class="interactive" id="pcr-explorer">
-            <label for="cycles-slider">Cycles: <strong id="cycles-val">30</strong></label>
-            <input type="range" id="cycles-slider" min="1" max="40" value="30" step="1">
+          <p><strong>II.</strong></p>
 
-            <label for="efficiency-slider" style="margin-top:1rem;">
-              Efficiency per cycle: <strong id="efficiency-val">95</strong>%
-            </label>
-            <input type="range" id="efficiency-slider" min="50" max="100" value="95" step="1">
+          <p>PCR is a decades-old method to copy DNA. Millions of biologists use it nearly every week for everything from cloning genes to diagnosing diseases. The way it works is fairly simple, too. Just take a little tube and add a DNA sequence, or the molecule to be copied. Next, add a DNA polymerase enzyme and some primers, which are short DNA snippets that bind to the DNA sequence to be copied. And finally, sprinkle in some nucleotides (the raw building materials for DNA) and magnesium. Finally, place the tube inside a machine, roughly the size of a DVD player, called a thermocycler, the sole job of which is to ramp temperatures up and down, again and again.</p>
 
-            <div class="output">
-              Starting molecules: 1<br>
-              Final copies: <strong id="copies-out">—</strong><br>
-              That's roughly <strong id="copies-sci">—</strong>
-            </div>
+          <p>The machine starts by increasing the temperature to about 96&#176;C, which melts the double-stranded DNA molecule, breaking it into two separate pieces. Then, the temperature drops to 60&#176;C, the perfect temperature for primers to latch onto those DNA molecules. Next, the device goes back up to about 70&#176;C, the temperature at which the polymerase enzyme is most active. Each polymerase seeks out a primer, grabs onto it, and begins copying the DNA by stitching together nucleotides. And finally, the thermocycler goes back to 96&#176;C to begin the cycle anew. Every time this cycle runs, the amount of DNA in the tube roughly doubles. There are typically 30 cycles in a single PCR experiment, which means that two strands of DNA become (assuming perfect efficiency) 2<sup>30</sup> copies, or 1.07 billion molecules.</p>
 
-            <canvas id="pcr-canvas" height="160" aria-label="Amplification curve"></canvas>
-          </div>
+          <p>Running a PCR today takes about an hour. Each cycle takes a few minutes. Why can&#8217;t this happen much faster?</p>
 
-          <p>
-            Notice that even a small drop in efficiency has an outsized effect at high cycle counts. A reaction running at 95% efficiency for 30 cycles produces about half as many copies as one running at 100%. This is why reaction optimization matters so much in practice.<label for="sn-3" class="sn-toggle"></label><input type="checkbox" id="sn-3" class="sn-checkbox"><span class="sidenote">In quantitative PCR (qPCR), efficiency is calibrated using a standard curve so the readout can be converted into absolute molecule counts.</span>
-          </p>
+          <p>There are three factors involved: <em>diffusion</em>, or the time it takes for molecules to move to their correct locations, the <em>length</em> of the DNA being copied, and the <em>ramp</em> rates between each temperature. Diffusion matters because DNA cannot be copied until the primers and polymerase have &#8220;found&#8221; their targets; longer DNA strands take more time to copy because polymerase moves at a specific pace (about 60 nucleotides per second); and ramp rates just mean thermocyclers must cool from, say, 96&#176;C to 70&#176;C. All of this takes time.</p>
 
-          <h2>The thermal limit</h2>
+          <p>With these factors in mind, though, we can start thinking about ways to cut down on these bottlenecks.</p>
 
-          <p>
-            One real limit on PCR speed is the thermal cycling itself. You're heating and cooling a liquid, and that takes time. Modern thermocyclers have thin-walled tubes and powerful Peltier elements to speed up ramping, but there's a floor set by the heat capacity of water and the kinetics of DNA melting.
-          </p>
+          <p>The easiest way to speed up PCR is to reduce the number of cycles. Most scientists use 30 cycles as a default, but is there a particular reason for this? Presumably, some ingredients in the PCR mix (like primers, or nucleotides) would run out <em>before</em> cycle 30, and thus the final few cycles wouldn&#8217;t actually mean much anyway.</p>
 
-          <p>
-            The fastest PCR systems today complete 30 cycles in about two minutes, down from the 3–4 hours Mullis's original protocol required. Most of that improvement came from hardware — thinner tube walls, faster ramp rates, smaller volumes — not from changes to the underlying chemistry.
-          </p>
+          <p>But not so! While some ingredients in the PCR mix get reused between cycles (like the polymerases), others are consumed every time DNA is made. Primers are physically incorporated into new strands, for example, and nucleotides are used to build them. But none of these ingredients run out before cycle 30. A 50-microliter PCR tube has about 6 &#215; 10<sup>15</sup> molecules of each nucleotide, enough to make over 10<sup>12</sup> copies of a 3,000-base gene. (For context, 10<sup>12</sup> is 1,000-times larger than 2<sup>30</sup>.) Primers and polymerases aren&#8217;t limiting either. Polymerases only start to become scarce after about 35 cycles.</p>
 
-          <h2>Why it hasn't been replaced</h2>
+          <p>The actual limitation in PCR is &#8220;product reannealing,&#8221; which just means that as the DNA copies become more abundant (in the hundreds of millions of copies) they start to find <em>each other</em> during the annealing step faster than the primers can bind them. As the amplified DNA starts to compete with primers, each cycle gets less efficient. Cutting a PCR from 30 to 25 cycles would just reduce the DNA yields, then, which would also decrease the likelihood that experiments work well <em>downstream</em>. <strong>Therefore, I&#8217;m not convinced that reducing the number of PCR cycles is a good way to save time.</strong></p>
 
-          <p>
-            Competing technologies exist: isothermal amplification (LAMP, RPA) doesn't require thermal cycling, which makes it attractive for point-of-care diagnostics.<label for="sn-4" class="sn-toggle"></label><input type="checkbox" id="sn-4" class="sn-checkbox"><span class="sidenote">LAMP was used widely during COVID-19 for low-cost field testing. It's fast but harder to multiplex than PCR.</span> But these methods have narrower dynamic ranges, higher false-positive rates, and are harder to multiplex. They solve specific problems in specific contexts. PCR remains the gold standard for most quantitative and high-specificity applications.
-          </p>
+          <p>The second way to speed up PCR is to make faster polymerases. <em>Taq</em>, a polymerase isolated from <em>Thermus aquaticus</em>, a &#8220;heat-loving&#8221; bacterium found in near-boiling water in Yellowstone National Park, copies DNA at about 60 nucleotides per second. It could theoretically replicate a 3,000-base DNA sequence in less than a minute. In reality, though, the polymerase &#8220;falls off&#8221; the DNA all the time (like, every second) meaning it actually goes much slower. (New England Biolabs, the company that sells <em>Taq</em>, recommends <a href="https://www.neb.com/en-us/products/pcr-qpcr-and-amplification-technologies/taq-dna-polymerases">one minute of extension time</a> per kilobase of DNA, or 3 minutes for 3,000 bases.) The DNA extension step at 70&#176;C is <em>by far</em> the longest part of PCR.</p>
 
-          <p>
-            The lesson is that near-optimal technologies are stable in a way that merely good technologies aren't. When a technique has fully explored its constraint landscape, incremental improvements yield diminishing returns, and radical alternatives can't improve on the fundamentals. PCR is a near-optimal solution to a well-defined problem, which is why it looks, 40 years later, almost exactly the same as it did in 1985.
-          </p>
+          <p>Other polymerases, like Phusion, are much faster; not because they move faster along the DNA, but because they don&#8217;t fall off so much. Phusion is an <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC373405/">engineered protein</a> made by attaching a <em>Pyrococcus</em> polymerase to a small DNA-binding protein, <a href="https://febs.onlinelibrary.wiley.com/doi/10.1002/1873-3468.13934">Sso7d</a>, that makes it hold onto DNA strands more tightly. ThermoFisher, the company behind Phusion, recommends just <a href="https://www.thermofisher.com/order/catalog/product/F530S">15 seconds</a> per kilobase for extension. <strong>In other words, swapping out one polymerase for another can save more than an hour of time on PCR.</strong> This is already an incredible time savings, and I&#8217;m skeptical we&#8217;ll find anything besides marginal time savings by engineering faster polymerases.</p>
 
-          <div class="footnotes">
-            <p>
-              <strong>Further reading:</strong> Mullis et al., "Specific enzymatic amplification of DNA in vitro," <em>Cold Spring Harbor Symposia on Quantitative Biology</em>, 1986.
-              Saiki et al., "Primer-directed enzymatic amplification of DNA with a thermostable DNA polymerase," <em>Science</em>, 1988.
-            </p>
-          </div>
+          <p>Finally, we can speed up PCR by making faster thermocyclers. Modern machines are slow and outdated. A few years ago, ThermoFisher bought a bunch of thermocyclers and <a href="https://documents.thermofisher.com/TFS-Assets/LSG/brochures/Thermal_Cycler_Ramp_RatesAppNote.pdf">directly compared</a> how fast they heat and cool samples. Across the instruments, the average upward ramp rate was 4.75&#176;C/s and the average cooling rate was 3.82&#176;C/s. Cheaper machines, like the Bio-Rad T100, have a ramp rate closer to 2.5&#176;C/s (and these are the most common devices in research labs.) In practice, then, ramping temperatures eats up a lot of time! Every time the machine drops from 95&#176;C to 60&#176;C, it takes about 10 seconds.</p>
+
+          <p>Thermocyclers have not changed much in the last forty years, either. They usually have a big metal block &#8212; aluminum, or silver if you pay extra &#8212; with holes drilled into it to hold the tubes. A lid comes down and sandwiches heating elements on top of the block, and a Peltier element heats the block by running electrical current to warm one side while cooling the other. To switch temperatures, the machine reverses the electrical current and fans blow the extra heat away. The ramp rates are slow because the machine is fighting the thermal mass of a big chunk of aluminum; it resists sudden temperature changes.</p>
+
+          <p>The only real option left to speed up PCR, then, is to massively speed up ramp rates. Cutting cycles doesn&#8217;t really work, and polymerases have already been so beautifully optimized that further gains would be tiny. But lasers and LED lights could, perhaps, make ramp rates nearly instant. How might that work?</p>
+
+          <p><strong>III.</strong></p>
+
+          <p>People have been using LEDs and lasers to do PCR for decades, though I&#8217;m not aware of any designs that have been commercialized. The gist is that, rather than heating a big aluminum block, you can shine a light directly at a droplet of liquid to heat it up. If the droplet is sufficiently small, with a high surface area-to-volume ratio, that heat will quickly dissipate and cool the droplet once the light is switched off. (No fans required.)</p>
+
+          <p>For a <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-17-1-218">2009 paper</a>, researchers made tiny droplets of PCR mix and dropped them into mineral oil to prevent evaporation. They placed the droplets onto a glass slide held at 58&#176;C, the temperature used for both annealing and extension. Then, they aimed an infrared laser overhead and heated the droplets to 93&#176;C for the denaturation step. Water absorbs infrared light strongly, whereas mineral oil absorbs about 40x less, so the laser heats the water and nothing else. As soon as the laser switches off, heat quickly drains from the water into the surrounding oil.</p>
+
+          <p>In one experiment, they used this setup to amplify a 187-basepair strand of DNA and finished 40 cycles in about six minutes. Because the volumes were so small, and the ramp rates so fast, each cycle only needed two seconds for denaturation, one second for primer annealing, and seven seconds for extension! (The extension step alone took about two-thirds of the total time.) The power needed to run the laser is also tiny; it consumes about 3,000-times less energy than a light bulb.</p>
+
+          <p>In 2015, a UC Berkeley team published a <a href="https://www.nature.com/articles/lsa201553">similar idea</a>, but used LEDs and a thin gold film instead of a laser. They coated a small piece of plastic with the gold film and dropped the liquid on top. Then, they placed blue LEDs underneath, using them to heat the gold and, in turn, the liquid above it. (Gold is ideal because it absorbs light efficiently and is also inert, so it doesn&#8217;t mess up the PCR.) With this simple setup, they could run 30 cycles of heating and cooling, switching between 55 and 95&#176;C, in about six minutes. The ramp rate was about twice as fast as any commercially-available thermocycler.</p>
+
+          <p>The two microgrants that I gave out were for ideas based <em>directly</em> on these prior studies. Sebastian Cocioba is building a small device that uses black PCR tubes and a small laser to heat samples, while &#8220;Utah&#8221; Hans is (mostly) duplicating the 2015 study, using gold and LED lights to build a PCR machine for less than $50.</p>
+
+          <p>Although I was initially excited by these ideas, I&#8217;m no longer convinced that photonic PCR will be widely adopted (even if cheap prototypes became available.) My rationale comes from a simple calculation. Imagine using the Phusion enzyme to amplify a gene made from 3,000 bases of DNA, running 30 cycles of amplification at the temperatures mentioned before: 98&#176;C (denaturation, 10 seconds) &#8594; 60&#176;C (annealing, 20 seconds) &#8594; 72&#176;C (extension, 45 seconds). How long would this take with &#8220;average&#8221; ramp rates from commercially-available machines? And how long would it take if the ramp rates were instantaneous instead?</p>
+
+          <p>There&#8217;s not a big difference between the two! In this scenario, the temperature ramping alone takes about 20 seconds per cycle, or 10 minutes total, and eats up about 20 percent of the total PCR time. So even if the ramping were instant, it wouldn&#8217;t matter much; PCR would go from a one-hour thing to a 50-minute thing. This was surprising to me, and I think it partly explains why photonic PCR devices haven&#8217;t caught on.</p>
+
+          <p><strong>IV.</strong></p>
+
+          <p>So photonic PCR won&#8217;t save much time. But suppose someone actually built a working photonic PCR machine and sold it for $150. (Utah has sent me a bunch of videos and has a working prototype that cost just $48 to build.) Would scientists buy it?</p>
+
+          <p>On paper, yes! A normal thermocycler costs anywhere from $2,500 (on the low end) to $10,000 (with lots of fancy controls and touchscreens). The cheapest thermocycler on eBay goes for $230, but it&#8217;s from 1997. These prices are absurd because, again, thermocyclers really haven&#8217;t changed much in the last forty years. On paper, then, selling a photonic PCR for $150 should be easy.</p>
+
+          <p>But cheap lab hardware has been tried before, and the results are not encouraging. In 2010, a biohacker named Tito Jankowski co-founded a company called <a href="https://openpcr.org">OpenPCR</a> that aimed to build, test, and sell cheap thermocyclers. Each device cost about $250 to build (surprisingly, the aluminum blocks only cost ~$15) and sold for $500. They ended up selling about a thousand machines, and the project is now defunct.</p>
+
+          <p>Before Tito tried selling PCR machines, he made and shipped blue light illuminators &#8212; those lights used to visualize gels and &#8220;see DNA&#8221; after electrophoresis. These blue lights cost about $2,500 from the big companies, but Tito figured he could build one for about $10 and sell it for $100. So he did that, only to find that scientists didn&#8217;t want to buy the lights, even though they were nearly identical to the commercial options and cost ~25-times less. Scientists assumed something must be wrong with something so cheap, Tito says. When he doubled the prices, sales went up.</p>
+
+          <p>Tito thinks the same idea applies to PCR machines, or really to any lab hardware. Scientists don&#8217;t always trust cheap alternatives, even when the data shows they work just as well. There&#8217;s also a gap between scientists and engineers; scientists often worry they&#8217;ll have to troubleshoot their protocols on an unfamiliar device, or that their experiments will stop working, whereas engineers are often more open to experimenting with, or building their own, hardware.</p>
+
+          <p>The problem isn&#8217;t only about price, then; there is also a switching cost! The further a new tool strays from what scientists already know, the less likely they are to adopt it. Swapping <em>Taq</em> for Phusion has a low switching cost, because scientists can just replace one enzyme in their PCR for another, without the need to change protocols or use a different thermocycler. The time savings are also large.</p>
+
+          <p>Asking labs to throw out their workflow and replace it with lasers and oil droplets, just to save 20 percent on PCR times, is probably not going to work. Some groups might adopt this, like core facilities or robotic labs that could run it and troubleshoot at scale, but the switching cost for most groups is just too high, and the advantages too small.</p>
+
+          <p>There is a painful irony to all this. Thermocyclers cost thousands of dollars and haven&#8217;t changed in decades, and yet cheaper and slightly faster alternatives will still struggle to spread. Once tools become common, they get entrenched and become difficult to dislodge. Anyone building open-source or low-cost lab hardware should keep this in mind.</p>
+
+          <h2>Reader comments</h2>
+
+          <p><strong>JM:</strong> I read your blog on PCR today and I think one thing you overlook is being more bespoke. As you point out, the length of DNA determines extension time. However, this causes an issue when you want to do a 96 well plate of different length PCRs at the same time (common in our work as we PCR as a first step after ordering and before Golden Gate to increase Golden Gate efficiency for short fragments). At the moment, we will split plates into similar lengths (at synthesis order or after receiving them) or try and run things at a single extension time that roughly works for everything. As such, we have been looking at the icon96 as each &#8220;well&#8221; in the machine can be controlled separately allowing individual optimization of wells despite staying in a single piece of labware. This also has benefits if you want to use more than one set of primers with different annealing temperatures. Finally, they have an interesting innovation around the number of cycles. They have added fluorescent dyes to enable stopping when a certain concentration of DNA is reached regardless of starting material. This enables potentially reduced timing on cycles without sacrificing downstream applications. In short, they seem to be offering on the go protocol optimization at the single well level.</p>
+
+          <ul>
+            <li><em>My reply: I had no idea that such a technology existed. Thank you for writing and sharing this with me; it sounds very cool! I&#8217;ll look into it more closely.</em></li>
+          </ul>
+
+          <p><strong>HL:</strong> Without systems level engineering, bio processes, hardware, and ecosystems will be resistant to improvement. PCR itself can absolutely be faster &#8212; cut cycles. Those that do qPCR amplification for custom NGS can see near saturation far under 30 cycles. The overlooked question is how much product is enough? We often have far too much. How much did you start with? What&#8217;s the ratio of input to primer concentration? Many seemingly mild improvements across the system will yield productive outcomes, particularly in the coming age of autonomous labs.</p>
+
+          <p><strong>SD:</strong> Perhaps one effective way to win over skeptical scientists&#8217; hearts is to let them try a lower-cost instrument for free (say, for a year). The lower production costs of these machines may make such an approach very feasible.</p>
+
+          <p><strong>MS:</strong> It&#8217;s not the length of DNA itself, it&#8217;s the speed of the polymerase. Biology operates at its own pace. And the optimal rate of the polymerase(s) has been well-characterized. Ramp speed is interesting. You can (and some have) sped that up by doing PCR in capillary tubes (thinner volumetric cross-section) in a hot-air cycler (instant temperature change outside) e.g., Roche&#8217;s early LightCycler took 30 minutes. But the 32 sample capillary system can&#8217;t scale with hot air. It was optimizing for the wrong thing. Labs often want to scale for throughput with not just 96 well plates but 384 well plates. Why worry about cutting cycling time in half when you can get 10 times as many samples only taking twice as long. It&#8217;s not like there isn&#8217;t something else to get done in the lab during a PCR run.</p>
+
+          <p><strong>RA:</strong> With speeds of engineered polymerases at 5s/Kb, I&#8217;m not sure that enzyme yield is the bottleneck. The enzyme has still to disengage and primers to anneal, enzyme find the template again, etc, and reaction gets self-inhibited over time. Maybe we got to think out of the box. E.g. a rolling circle polymerase that works at temperatures so high it does not need strand displacement, because the template dissociates right after each nt extension. That could be very fast. Or a way to dynamically control the amount of DNA product and reaction components, like a microfluidic device which keeps mixing channels, would tackle the issue of saturation and keep the reaction continuously exponential. Maybe a magic polymerase which instead of just copying the template once, it creates multiple copies in parallel at each cycle. Or maybe a rolling circle on a concatemerised template, which at each cycle it makes more than 2x the initial template&#8230; i.e. ideas to brainstorm, throw in the bin and keep the gold.</p>
+
+          <ul>
+            <li><em>My reply: Excellent comment; thanks for the insights. I had no idea a polymerase could move at 5 kb/s, because I&#8217;d imagine the diffusion of nucleotides would become rate-limiting, especially over later cycles.</em></li>
+          </ul>
+
+          <p><strong>EM:</strong> I remember setting up my first PCR in 2014 and having to add all the dNTPs and shit, took forever. Actual nightmare and annoying. [Master Mix] efficiency gains were unreal&#8230; I&#8217;m trying to think clinically, I&#8217;m not sure I can think of any circumstances where PCR is time sensitive enough where an hour here or there makes a difference. For bacterial differentiation they do MALDI-TOF iirc, for sensitivities and stuff, and PCR is for identification of specific organisms sometimes (stool, urethral swabs etc) but empiric treatment is generally started first for a lot of these.</p>
+
+          <p><strong>MPS:</strong> Photonic PCR might be quite good for qPCR since that&#8217;s often read out using fluorescence, so having optics integrated would help. Or ddPCR.</p>
+
+          <p><strong>PC:</strong> Interesting article. There are now much faster polymerases out there that could cut down on the proportion of the reaction committed to extension time (we use Repliqa &#8212; as fast as 1s/kb), making ramp rate savings proportionally higher.</p>
+
+          <p><strong>FC:</strong> It&#8217;s worth looking at what companies like MBS/NextGenPCR have been doing with SBS format plates (e.g., 3 temp 40 cycle PCR in 2 mins) &#8212; many things can be done to make PCR go quite a bit faster, especially qPCR (if you need access to post-reaction material your options change quite a bit), and even for long amplicons &#8212; and it&#8217;s entirely possible there&#8217;s a boatload of opportunity in enzyme engineering (the Roche folks are incredible at this).</p>
+
         </div>
       </main>
 
@@ -169,6 +199,5 @@
   </div>
 
   <script src="../js/main.js"></script>
-  <script src="../js/essays/pcr-near-optimal.js"></script>
 </body>
 </html>

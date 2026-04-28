@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Christian Anfinsen shared the 1972 Nobel Prize in Chemistry for showing that a protein's structure is encoded by its amino acid sequence — a breakthrough that predated the genetic code.">
+  <meta name="post-tag" content="essay">
+  <title>Underrated Origins of the Protein Folding Problem — Niko McCarty</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="../index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="../about.html">About</a>
+          <a href="../essays.html" class="active">Essays</a>
+          <a href="../shortform.html">Shortform</a>
+          <a href="../writing.html">Writing Elsewhere</a>
+          <a href="../bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <a href="../essays.html" class="back-link">&larr; Essays</a>
+
+        <div class="post-header">
+          <h1>Underrated Origins of the Protein Folding Problem</h1>
+          <p class="post-meta">
+            February 23, 2026 &middot; 6 min read
+            <span class="post-meta-tag">essay</span>
+          </p>
+        </div>
+
+        <div class="post-body">
+
+          <p>Students of biology take much more granted. Seemingly simple ideas &#8212; like how DNA is the genetic material, or how a protein folds according to the order of its amino acids &#8212; are taken as gospel or undeniable &#8220;truth,&#8221; even though such ideas once bordered on fringe conspiracies. I&#8217;m intrigued by the stories of how such ideas went mainstream, so to speak; doubly so if the discoveries were made by people who I&#8217;ve never heard of (not the Darwins or Mendels or Cricks).</p>
+
+          <p>Christian Anfinsen is one such person. Until last week, I had never heard of him. He shared the 1972 Nobel Prize in Chemistry for his studies of a particular enzyme, called ribonuclease. Specifically, he did a clever experiment in which he denatured this enzyme (meaning he destroyed its 3D shape) and then showed the enzyme could refold, and gain its activity, autonomously. This experiment was the first to suggest a protein&#8217;s form is encoded by its amino acid sequence, and it heralded the mad rush, by computational biologists, to solve the &#8220;protein folding problem.&#8221; (Anfinsen is also interesting, on a more personal level, because he apparently did his entire PhD at Harvard in just&nbsp;<a href="https://web.archive.org/web/20200509221922/https://profiles.nlm.nih.gov/spotlight/kk/feature/biographical">two years</a>.)</p>
+
+          <p>Before I describe the experiment, it&#8217;s important to put everything (briefly) in historical context. The experiment itself was published in 1961, but Anfinsen was working on these ideas since at least 1958. (I say this because he published another paper, also involving ribonuclease and its 3D form, in 1959; and the experiments, getting a paper publishing, and so on all take time.) Even if one uses 1961, the year Anfinsen published his experiment demonstrating that a protein&#8217;s structure is encoded by its amino acids, as reference, just consider all the things that were not yet understood:</p>
+
+          <p>The structure of DNA had only been solved eight years before; the first protein structure (myoglobin, cracked by John Kendrew) and Crick&#8217;s initial thoughts on the Central Dogma and information flow were only three years old; the first codon (UUU, corresponding to phenylalanine) was not yet solved. Said more forcefully, Anfinsen connected protein sequences to structures before the genetic code was mapped. And he figured out that the linear sequence of amino acids contained the instructions for a 3D structure, at a time when nobody really knew how DNA molecules even encoded amino acids, or how to sequence them. It&#8217;s really quite revolutionary.</p>
+
+          <p>Anfinsen&#8217;s&nbsp;<a href="https://www.pnas.org/doi/epdf/10.1073/pnas.47.9.1309">experiment</a>&nbsp;was quite simple, but provided a large amount of information. (In this sense, I&#8217;d absolutely classify it as a &#8220;<a href="https://press.asimov.com/articles/beautiful-experiments">beautiful experiment</a>&#8221; which, as defined by Nobel Prize laureate Frank Wilczek, is an experiment wherein you get out more than you put in.&#8221;) He was working with a small protein, called ribonuclease, which cuts up RNA molecules. Ribonuclease has four strong disulfide bridges which hold its 3D form. These bridges connect cysteines together, and always in the same pairs. The protein has eight cysteine amino acids, and so these disulfide bridges could theoretically take 105 different combinations; but Anfinsen found that the bridges always form between the same pairs. (There is a bridge connecting the cysteine at position 26 with a cysteine at position 84, for example.)</p>
+
+          <p>To begin, Anfinsen purified ribonuclease enzymes from cow pancreases and tested their activities and forms. He shined polarized light through his protein solution, for example, to measure how they rotate the polarity. (More &#8220;ordered&#8221; proteins twist light more severely.) He also tested whether the ribonucleases could cut up RNA molecules and, indeed, they did.</p>
+
+          <p>Next, Anfinsen dropped these enzymes in a 8M urea solution with mercaptoethanol. The mercaptoethanol destroys disulfide bridges, while urea destroys everything else, and especially the hydrogen bonds. The end result is a bunch of uncoiled, loose, inactive ribonucleases (as measured, again, according to their optical rotation and enzymatic activity.)</p>
+
+          <p>But then, in the final part of his experiment, Anfinsen filtered out the urea and mercaptoethanol, placed the enzymes in a &#8220;clean&#8221; liquid with pH 8.2, oxygenated them (so the disulfide bridges could reform) and waited 24 hours. The next day, enzymes which had been completely obliterated, in terms of 3D structure, suddenly had the same optical rotations and activities as when Anfinsen had first purified them from the cow pancreas. These &#8220;recovered&#8221; enzymes regained nearly 100 percent activity, and the final concentration was about 95 percent of the original batch.</p>
+
+          <p>In order for these enzymes to recover their activity, the four disulfide bridges must &#8220;re-find&#8221; their partners out of the 105 possible combinations I mentioned earlier. Anfinsen&#8217;s experiment showed that this pairing is not random; the same couplets find each other every time. More broadly, this experiment suggested that protein refolding itself is not random, but rather thermodynamically-driven. The native structure of a protein is stable, in other words, and proteins will autonomously &#8220;search&#8221; until they find a stable form.</p>
+
+          <p>Anfinsen called this the &#8220;thermodynamic hypothesis of protein folding,&#8221; and concluded that in order to&nbsp;<a href="https://link.springer.com/article/10.1038/sj.embor.7400655">determine a protein&#8217;s structure</a>, one could presumably calculate the sum of all interactions between its atoms, in all possible configurations, and then find the solution with the lowest internal energy.</p>
+
+          <p>In 1968, a full seven years after Anfinsen&#8217;s work was published, a protein biochemist named Cyrus Levinthal published a paper titled,&nbsp;<a href="https://jcp.edpsciences.org/articles/jcp/abs/1968/01/jcp196865p44/jcp196865p44.html">&#8220;Are there pathways for protein folding?&#8221;</a>&nbsp;He begins the paper with an overt nod toward Anfinsen&#8217;s experiment, writing: &#8220;Denatured proteins, which have had essentially all of their native three-dimensional structure disrupted, can refold from their random disordered state into a well-defined unique structure, in which the biological activity is virtually completely restored.&#8221; Levinthal&#8217;s paper goes on to present a paradox: Namely, consider a simple scenario in which each amino acid in a protein can adopt three configurations. Assuming this protein has 100 amino acids, then it could theoretically adopt 3<sup>100</sup> forms. Even if this protein was able to sample configurations 10<sup>13</sup> times per second, it would take 10<sup>27</sup> years to try all configurations. And yet, somehow, experimental evidence from the time demonstrated that proteins can fold quite quickly; often in a few seconds or minutes. This discrepancy became known as Levinthal&#8217;s paradox. Even today, it seems that more protein biochemists are familiar with Levinthal than Anfinsen, because the former&#8217;s paradox motivated the &#8220;protein-folding problem&#8221; and suggested there must be some viable way to predict a protein&#8217;s structure in a computationally-efficient way, since biology had evolved a mechanism to do precisely that.</p>
+
+          <p>And yet, the data Anfinsen collected in 1961 already showed that there is a lag phase as ribonuclease enzymes regain their activity. This lag phase suggests that these enzymes &#8220;search through space&#8221; back to their 3D form and, most importantly, that this happens quite quickly. Anfinsen also showed that wrong intermediates (the disulfide shuffling) can correct themselves, presumably due to thermodynamics. Or, said in simpler terms, Anfinsen&#8217;s experiment demonstrated a glimpse of the solutions to a paradox that was only formulated eight years later.</p>
+
+        </div>
+      </main>
+
+      <footer>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nikomc"
+          method="post"
+          class="bd-form bd-form--footer embeddable-buttondown-form"
+        >
+          <p class="bd-label">Join 10,000+ readers</p>
+          <div class="bd-row">
+            <input type="email" name="email" id="bd-email-footer" placeholder="your@email.com" required>
+            <input type="hidden" name="tag" value="nikomc.com">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="../feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -162,6 +162,59 @@
   });
 
   /* --------------------------------------------------------
+     Homepage recent posts — fetch essays + shortform indexes,
+     merge all <li> items sorted by date, render top 5.
+     Runs only when #post-list-home exists.
+  -------------------------------------------------------- */
+  var homeList = document.getElementById('post-list-home');
+
+  if (homeList) {
+    function fetchListItems(url) {
+      return fetch(url)
+        .then(function (r) { return r.text(); })
+        .then(function (html) {
+          var parser = new DOMParser();
+          var doc = parser.parseFromString(html, 'text/html');
+          return Array.prototype.slice.call(
+            doc.querySelectorAll('#post-list li[data-tag]')
+          );
+        });
+    }
+
+    Promise.all([
+      fetchListItems('essays.html'),
+      fetchListItems('shortform.html')
+    ]).then(function (results) {
+      var all = results[0].concat(results[1]);
+
+      /* Sort by date descending (data-title not used; read post-date text) */
+      all.sort(function (a, b) {
+        var da = (a.querySelector('.post-date') || {}).textContent || '';
+        var db = (b.querySelector('.post-date') || {}).textContent || '';
+        return db.localeCompare(da);
+      });
+
+      /* Render top 5, adding a tag badge */
+      all.slice(0, 5).forEach(function (li) {
+        var clone = li.cloneNode(true);
+        /* remove any existing tag badge to avoid duplicates */
+        var existing = clone.querySelector('.post-tag');
+        if (existing) existing.parentNode.removeChild(existing);
+
+        var tag = li.getAttribute('data-tag') || '';
+        var badge = document.createElement('span');
+        badge.className = 'post-tag';
+        badge.textContent = tag;
+        clone.appendChild(badge);
+
+        homeList.appendChild(clone);
+      });
+    }).catch(function () {
+      /* silently fail — list stays empty */
+    });
+  }
+
+  /* --------------------------------------------------------
      Active nav link — essay / shortform sub-pages.
      Top-level pages set class="active" in markup.
      For posts in /essays/, derive from post-tag meta.

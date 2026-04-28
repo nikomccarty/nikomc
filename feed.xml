@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Niko McCarty</title>
+    <link>https://nikomc.com</link>
+    <description>Writing on biology.</description>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://nikomc.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <managingEditor>nsmccarty3@gmail.com (Niko McCarty)</managingEditor>
+    <webMaster>nsmccarty3@gmail.com (Niko McCarty)</webMaster>
+    <item>
+      <title>Fast Biology Bounties: A Quick Update</title>
+      <link>https://nikomc.com/essays/biology-bounties-update.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/biology-bounties-update.html</guid>
+      <description>A quick update on the Fast Biology Bounties program — what we learned from the first round.</description>
+      <category>shortform</category>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>PCR is a (Surprisingly) Near-Optimal Technology</title>
+      <link>https://nikomc.com/essays/pcr-near-optimal.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/pcr-near-optimal.html</guid>
+      <description>PCR has remained essentially unchanged for 40 years. It turns out there&#x27;s a good reason for that.</description>
+      <category>essay</category>
+      <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

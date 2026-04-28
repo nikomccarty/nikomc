@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A new paper in Nature shows that enzymes can be made by mixing just four molecules together, none of which are amino acids.">
+  <meta name="post-tag" content="essay">
+  <title>Enzymes from Random Molecules — Niko McCarty</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="../index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="../about.html">About</a>
+          <a href="../essays.html" class="active">Essays</a>
+          <a href="../shortform.html">Shortform</a>
+          <a href="../writing.html">Writing Elsewhere</a>
+          <a href="../bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <a href="../essays.html" class="back-link">&larr; Essays</a>
+
+        <div class="post-header">
+          <h1>Enzymes from Random Molecules</h1>
+          <p class="post-meta">
+            February 23, 2026 &middot; 8 min read
+            <span class="post-meta-tag">essay</span>
+          </p>
+        </div>
+
+        <div class="post-body">
+
+          <p>A&nbsp;<a href="https://www.nature.com/articles/s41586-025-09860-9">new paper</a>&nbsp;in Nature shows that enzymes can be made by mixing just four molecules together, none of which are amino acids. The four molecules randomly link together to form long polymer chains, some of which catalyze chemical reactions.</p>
+
+          <p>Though this sounds impressive, the paper itself is quite strange. For one, it is extremely short (only about 2,700 words) and has no discussion section. The text is also absurdly dense; likely designed to be read by materials or physics people, rather than biologists. And lastly, I think the paper is most interesting for the things it leaves unwritten — the ideas left out rather than put in. Understanding why this paper matters, then, is mostly an exercise in speculation.</p>
+
+          <p>For context, scientists have been trying to design new enzymes for decades. But this "design" has traditionally been done by searching for amino acid sequences which then fold into a 3D shape with some desired function. Computational biologists tend to fixate on the sequence; they tend to consider proteins as individuals rather than as populations of molecules.</p>
+
+          <p>Enzyme design is also a really hard problem. An enzyme's interior holds amino acids in a precise way, such that the amino acid(s) in the active site latch onto substrates and convert them into new molecules. This "active site" is surrounded by other amino acids that create a microenvironment suited to the reaction. If the substrate is negatively-charged, for example, the microenvironment works to exclude positively-charged molecules.</p>
+
+          <p>Despite their complexity, biologists have designed viable enzymes computationally. Last year, David Baker's group at the University of Washington&nbsp;<a href="https://www.science.org/doi/10.1126/science.adu2454">designed a serine hydrolase</a>&nbsp;that breaks down ester groups, or chemicals made by joining together an acid and an alcohol. This AI-designed enzyme has an active site made from three amino acids (a "catalytic triad") that work together to catalyze the reactions. But it was quite slow, completing just one reaction per second, compared to the thousands of reactions per second that is typical of natural serine hydrolases. Enzyme design thus remains a mostly unsolved problem.</p>
+
+          <p>This new Nature paper, though, took a completely different approach. The key breakthrough, in my eyes, is its focus on populations of polymers rather than in trying to create one perfect polymer. The authors created enzymes using a statistical or probabilistic approach, rather than a deterministic one.</p>
+
+          <p>The researchers focused on metalloenzymes, which are arguably simpler than serine hydrolases because they only have a single amino acid in their active site, rather than a "triad". Metalloenzymes hold metal ions (often zinc, iron, or copper) in that active site; hence the name. The researchers made two types of metalloenzymes: terpene cyclases, which take a string of carbons as substrate and "loop" them into a circle, and peroxidases, which use the iron in heme to oxidize substrates, like hydrogen peroxide. I'll just focus on the terpene cyclase, as the approach taken was largely identical in both cases.</p>
+
+          <p>In nature, terpene cyclases take a straight chain of ten carbon atoms — a molecule called citronellal — and fold them into a ring. If all goes well, the enzyme makes isopulegol, which is a carbon ring with one alcohol group. But if water gets into the active site, this reaction is disrupted and the enzyme instead makes menthoglycol, which is the same carbon loop but with two alcohol groups.</p>
+
+          <p>Natural terpene cyclases have aspartate in their active site. The aspartate donates a proton to citronellal, thus making one of its carbon atoms positively charged. This triggers cyclization into a ring, as the "activated" carbon joins the carbon at the other side of the chain. The aspartate is surrounded by a hydrophobic shell, which keeps water out so that isopulegol gets made selectively instead of menthoglycol.</p>
+
+          <p>Seeking to create random polymers which could mimic a terpene cyclase, the researchers first analyzed 1,300 metalloproteins, looking for commonalities between them. They found two things: First, metalloproteins tend to have one "key" amino acid in their interior — often histidine or aspartate — which latches onto the metal ion, locking it in place, so that it can perform the chemical reaction. Second, metalloenzymes tend to surround their active sites with hydrophobic amino acids, which exclude water molecules. To make a metalloenzyme, then, one basically just needs to situate a single amino acid, or electron donor, inside a hydrophobic shell.</p>
+
+          <p>Next, the authors scoured chemical databases for molecules with these same properties, meaning they are hydrophobic or similar in shape and charge to histidine or aspartate. They ultimately settled on four molecules:</p>
+
+          <ul>
+            <li>Methyl methacrylate (MMA), a hydrophobic molecule.</li>
+            <li>2-ethylhexyl methacrylate (EHMA), an even more hydrophobic molecule.</li>
+            <li>Oligo(ethylene glycol) methyl ether methacrylate (OEGMA), a hydrophilic molecule.</li>
+            <li>3-sulfopropyl methacrylate potassium salt (SPMA), which mimics aspartate as an electron donor; the active site surrogate.</li>
+          </ul>
+
+          <p>(Note: You need some hydrophilic molecules, even when trying to build a hydrophobic active site, because the polymers won't dissolve in water without them. Instead, they will aggregate or precipitate out of the solution. Hence the inclusion of OEGMA.)</p>
+
+          <p>Then, the researchers mixed these four molecules together, and each molecule randomly linked with others to create long and unique polymers. The hope was that some of these "pseudo-random" polymers would position a SPMA amid hydrophobic molecules, thus creating a terpene cyclase mimic. Initially, things did not go to plan.</p>
+
+          <p>In their first trial, the researchers mixed 50% MMA, 20% EHMA, 25% OEGMA, and 5% SPMA and added the resulting polymers to citronellal. After 24 hours, the polymers cyclized citronellal, but poorly. About half of the citronellal molecules were converted, and only 55 percent of products were isopulegol. In other words, the polymers could slowly catalyze reactions, but not selectively.</p>
+
+          <p>So the authors iterated. To optimize their reaction, they used a Monte Carlo algorithm to generate 100,000 polymer sequences based on each molecule's ratio and reactivity. By tinkering with the molecular ratios and re-running these simulations, they figured out they could improve the odds that SPMA would be surrounded by hydrophobic residues — and thus act like a terpene cyclase — if they increased SPMA's concentration (to 15%) while decreasing OEGMA (to 5%).</p>
+
+          <p>This yielded much better results. In a second round, the polymers converted 91 percent of citronellal after 24 hours, with a selectivity for isopulegol of 76 percent.</p>
+
+          <p>So why does any of this matter? Well, the paper doesn't really say, outside of some vague or indirect commentary. So what follows is mostly speculation…</p>
+
+          <p>I think one reason this paper is important is because it does away with the outdated notion that enzymes must be tuned at the sequence-level. The study shows, rather, that enzymes can be made spontaneously using pseudo-random populations of molecules, much like the earliest cells on Earth probably did. Early lifeforms didn't need to evolve the perfect enzyme; they just needed to find concoctions of molecules that were "good enough" for a particular function.</p>
+
+          <p>The study also suggests that the 20 amino acids used by cells are not particularly special, and their functions can be replaced with other molecules carrying the same properties — like "charged" or "hydrophobic" or "flexible" and so on.</p>
+
+          <p>When I first discussed this paper with a friend, a protein biochemist, they urged me not to write about it. They said that metalloenzymes are not particularly difficult to make, and so this paper's outcomes aren't all that surprising. They pointed to&nbsp;<a href="https://link.springer.com/article/10.1007/s10563-022-09376-6">another study</a> demonstrating that it's possible to make functional metalloenzymes simply by mixing purified phenylalanine with zinc ions.</p>
+
+          <p>My retort to their criticism, though, is that the authors have already used this same "random polymer" approach to make other types of proteins. In 2020, for example, they made&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/31915399/">protein channels</a>&nbsp;that were exquisitely sensitive to protons and, during our conversation, hinted that they have also made other classes of enzymes, including hydrolases.</p>
+
+          <p>But still, this paper leaves so much left unsaid. I suspect many protein biochemists reading this blog still won't find the work impressive or useful or surprising or whatever. It takes a long time to overturn dogma, after all, and it'll be an uphill battle to change people's perceptions of enzymes and how one can make them.</p>
+
+          <p>The paper itself also took seven years of work, according to a corresponding author, and involved many back-and-forth debates with a "hostile" reviewer. The manuscript was cut nearly in half (from nearly 5,000 words to 2,700), losing much of its philosophical framing. "This was the hardest paper I've ever published," the authors told me. And after spending a week wrestling with whether to write about it, I understand why.</p>
+
+        </div>
+      </main>
+
+      <footer>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nikomc"
+          method="post"
+          class="bd-form bd-form--footer embeddable-buttondown-form"
+        >
+          <p class="bd-label">Join 10,000+ readers</p>
+          <div class="bd-row">
+            <input type="email" name="email" id="bd-email-footer" placeholder="your@email.com" required>
+            <input type="hidden" name="tag" value="nikomc.com">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="../feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
