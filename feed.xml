@@ -5,25 +5,305 @@
     <link>https://nikomc.com</link>
     <description>Writing on biology.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nikomc.com/feed.xml" rel="self" type="application/rss+xml"/>
     <managingEditor>nsmccarty3@gmail.com (Niko McCarty)</managingEditor>
     <webMaster>nsmccarty3@gmail.com (Niko McCarty)</webMaster>
     <item>
-      <title>Fast Biology Bounties: A Quick Update</title>
-      <link>https://nikomc.com/essays/biology-bounties-update.html</link>
-      <guid isPermaLink="true">https://nikomc.com/essays/biology-bounties-update.html</guid>
-      <description>A quick update on the Fast Biology Bounties program — what we learned from the first round.</description>
-      <category>shortform</category>
-      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
       <title>PCR is a (Surprisingly) Near-Optimal Technology</title>
       <link>https://nikomc.com/essays/pcr-near-optimal.html</link>
       <guid isPermaLink="true">https://nikomc.com/essays/pcr-near-optimal.html</guid>
-      <description>PCR has remained essentially unchanged for 40 years. It turns out there&#x27;s a good reason for that.</description>
+      <description>Photonic PCR can run 40 cycles in six minutes. But there are several reasons why it&#x27;s unlikely to catch on — and why PCR is already surprisingly close to optimal.</description>
       <category>essay</category>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>We Need Better &quot;Cloning Design&quot; Tools</title>
+      <link>https://nikomc.com/essays/cloning-design.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/cloning-design.html</guid>
+      <description>Why do cloning tools still suck? This problem seems like a low-hanging fruit for AI to solve. I gave microgrants to two people working on it.</description>
+      <category>shortform</category>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>A $1,000 Microgrant for &quot;Bubble Algae&quot;</title>
+      <link>https://nikomc.com/essays/sea-grapes.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/sea-grapes.html</guid>
+      <description>Valonia ventricosa, or bubble algae, is the largest single-celled organism on Earth. I gave a $1,000 microgrant to a team working on using it as a living bioreactor.</description>
+      <category>shortform</category>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Failed Attempts to Make V. Natriegens Grow Faster</title>
+      <link>https://nikomc.com/essays/failed-fast.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/failed-fast.html</guid>
+      <description>I claimed nobody had tried to evolve Vibrio natriegens to grow faster. I was wrong, and it warrants a correction.</description>
+      <category>shortform</category>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Many Great Inventions Weren&#x27;t Made by &quot;Serendipity&quot;</title>
+      <link>https://nikomc.com/essays/optogenetics-serendipity.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/optogenetics-serendipity.html</guid>
+      <description>Important inventions in molecular biology are often framed as happening by serendipity. The more you read about these histories, the more you see that great inventors engineered their own luck.</description>
+      <category>essay</category>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Where is my Mother Machine?</title>
+      <link>https://nikomc.com/essays/mother-machine.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/mother-machine.html</guid>
+      <description>A tiny microfluidic device lets you watch a single cell divide hundreds of times — and yet almost nobody uses it. Here&#x27;s why that should change.</description>
+      <category>essay</category>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>A Small Amount of Money Can Surface Many Good Ideas</title>
+      <link>https://nikomc.com/essays/bounty-results.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/bounty-results.html</guid>
+      <description>The Fast Biology Bounties went surprisingly well. My goal was to spend $10,000, but so many good submissions came in that I ended up giving away $15,000 instead.</description>
+      <category>essay</category>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>One Equation for Faster-Growing Cells</title>
+      <link>https://nikomc.com/essays/growth-rate.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/growth-rate.html</guid>
+      <description>A single equation explains why Vibrio natriegens divides every 9.8 minutes — and points toward how to make cells grow faster.</description>
+      <category>essay</category>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>eLife Fallout</title>
+      <link>https://nikomc.com/essays/elife-fallout.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/elife-fallout.html</guid>
+      <description>When a prestigious journal scrapped accept-reject decisions on submitted papers, some scientists rebelled, and the editor-in-chief was fired.</description>
+      <category>essay</category>
+      <pubDate>Thu, 05 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Fast Biology Bounties &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/bounties.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/bounties.html</guid>
+      <description>TL;DR: $10,000 in prizes for ideas on how to speed up wet-lab experiments. Prizes will be given for ideas that are highly original and technically tractable. A</description>
+      <category>essay</category>
+      <pubDate>Mon, 02 Mar 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>What I Learned in 2024 &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/2024-lessons.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/2024-lessons.html</guid>
+      <description>Asimov Press, the publishing company that I run with Xander Balwit, has only been around for about a year. I really love the job because it lets me work with al</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>30 Great Essays About Biology &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/30-great-essays.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/30-great-essays.html</guid>
+      <description>The world needs more essays about biology. So last month, I tweeted a link to one of my favorite essays (#1 below) and promised that I would continue to share a</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>A Christmas Story &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/a-christmas-story.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/a-christmas-story.html</guid>
+      <description>I.</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Underrated Origins of the Protein Folding Problem</title>
+      <link>https://nikomc.com/essays/anfinsen.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/anfinsen.html</guid>
+      <description>Christian Anfinsen shared the 1972 Nobel Prize in Chemistry for showing that a protein&#x27;s structure is encoded by its amino acid sequence — a breakthrough that predated the genetic code.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Art of Emails &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/art-of-emails.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/art-of-emails.html</guid>
+      <description>Emails are underrated. Many people view them as purely functional — as just another part of the job. But they can be much more than that. Emails are a useful wa</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Calculate BioNumbers &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/bionumbers.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/bionumbers.html</guid>
+      <description>Arithmetic is a superpower. Or, as&amp;nbsp;Dynomight has written, a “world-modeling technology.” It is one of the first things we learn in school, and yet few seem</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Brick Technology Addictions</title>
+      <link>https://nikomc.com/essays/brick-technology.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/brick-technology.html</guid>
+      <description>A YouTube channel about LEGO machines got me thinking about fast iterations and biology.</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Case for Bridge Editors &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/bridge-editors.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/bridge-editors.html</guid>
+      <description>Arc Institute researchers recently&amp;nbsp;published a preprint&amp;nbsp;showing that their gene-editing technology, called Bridge recombinases, work in human cells. M</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>C57Bl6/J &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/c57bl6-j.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/c57bl6-j.html</guid>
+      <description>The first mouse emulation appeared in 2032; a rodent’s entire anatomy, and all of its cells—including the brain—perfectly recapitulated using computer hardware.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Minimize Cell Burden &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/cell-burden.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/cell-burden.html</guid>
+      <description>Biochemistry textbooks often&amp;nbsp;depict cells as spacious places, where molecules float in secluded harmony. But cells are dense and crowded; a bit like molecu</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Central Dogma in 7 Experiments &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/central-dogma.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/central-dogma.html</guid>
+      <description>In the days before DNA sequencing, high-powered microscopes, and molecular biology textbooks, decoding the finer workings of a living cell often required arduou</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Enzymes from Random Molecules</title>
+      <link>https://nikomc.com/essays/enzymes-from-random-molecules.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/enzymes-from-random-molecules.html</guid>
+      <description>A new paper in Nature shows that enzymes can be made by mixing just four molecules together, none of which are amino acids.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>How to Find Writing Ideas &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/how-to-find-writing-ideas.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/how-to-find-writing-ideas.html</guid>
+      <description>Many writers have published advice about how to write better,&amp;nbsp;myself included. But I recently went looking for advice about&amp;nbsp;how to find writing ideas,</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Biotech Needs a Hydrogen Atom &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/hydrogen-atom.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/hydrogen-atom.html</guid>
+      <description>The hydrogen atom revolutionized physics.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Microbial Lenses &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/microbial-lenses.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/microbial-lenses.html</guid>
+      <description>There’s a new&amp;nbsp;paper out in PNAS&amp;nbsp;that hints at some intriguing synthetic biology applications. Researchers at the University of Rochester introduced a</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>The Most Abundant Protein &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/most-abundant-protein.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/most-abundant-protein.html</guid>
+      <description>One reason David Goodsell’s paintings attract biologists, I think, is because they are unapologetically realistic. His paintings depict seas of macromolecules s</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Moving to the Bay</title>
+      <link>https://nikomc.com/essays/moving-to-the-bay.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/moving-to-the-bay.html</guid>
+      <description>I moved to the Bay Area to join Astera Institute as an independent fellow.</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>This OpenAI Wet-Lab Blog is Pretty Good</title>
+      <link>https://nikomc.com/essays/openai-wet-lab.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/openai-wet-lab.html</guid>
+      <description>OpenAI used GPT-5 to optimize Gibson Assembly. Here&#x27;s what they actually did — and where I&#x27;d push back.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Estimating the Size of a Single Molecule &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/single-molecule.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/single-molecule.html</guid>
+      <description>Many decades before the discovery of x-rays and the invention of powerful microscopes, Lord Rayleigh calculated the size of a single molecule. And he did it, re</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Tardigrades Can Live for 30 Years &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/tardigrades.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/tardigrades.html</guid>
+      <description>A few months ago, I saw some claims online that tardigrades—also called water bears—can survive for up to 30 years without food or water.</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Think of the Eggs &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/think-of-the-eggs.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/think-of-the-eggs.html</guid>
+      <description>When people think of “biotech” — myself included — they tend to picture GLP-1s and gene therapies. But biotech is much broader than just medicine; it’s also pus</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Underrated Science Books &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/underrated-science-books.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/underrated-science-books.html</guid>
+      <description>It’s generally a&amp;nbsp;bad idea&amp;nbsp;to write a book.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>We Need Biotech Data &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/we-need-biotech-data.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/we-need-biotech-data.html</guid>
+      <description>In 2011, while working in Brazil, Max Roser began formulating the idea for&amp;nbsp;Our World in Data. He initially planned to publish “data and research on global</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Why Engineer Biology? &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/why-engineer-biology.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/why-engineer-biology.html</guid>
+      <description>This essay originally appeared on the&amp;nbsp;Asimov blog.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Why I Write &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/why-i-write.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/why-i-write.html</guid>
+      <description>In the summer of 1946, shortly after the close of World War II, George Orwell published a short essay entitled “Why I Write.” He had already released&amp;nbsp;Comin</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Why Vibrio Never Caught On</title>
+      <link>https://nikomc.com/essays/why-vibrio-never-caught-on.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/why-vibrio-never-caught-on.html</guid>
+      <description>A microbe that divides every 10 minutes never displaced E. coli. Here&#x27;s why — and why that might change.</description>
+      <category>essay</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Writing Moats &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/writing-moats.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/writing-moats.html</guid>
+      <description>Good writers should not fear AI. Many types of writing that people enjoy reading cannot easily be replicated by machines. Also, writing is a good way to think a</description>
+      <category>shortform</category>
+      <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
