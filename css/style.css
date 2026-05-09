@@ -746,6 +746,155 @@ footer a { color: var(--muted); text-decoration: none; }
 footer a:hover { text-decoration: underline; }
 
 /* ============================================================
+   Manifesto page — card grid + category filters
+   ============================================================ */
+.manifesto-intro {
+  max-width: var(--prose-w);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.manifesto-intro p { margin-bottom: 1rem; }
+
+.manifesto-page .content {
+  /* allow grid to use full content width, not just prose column */
+  max-width: none;
+}
+
+.cat-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 1.5rem 0 2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cat-chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  transition: color 0.12s, border-color 0.12s, background 0.12s;
+}
+
+.cat-chip:hover {
+  color: var(--text);
+  border-color: var(--muted);
+}
+
+.cat-chip.active {
+  color: var(--bg);
+  background: var(--text);
+  border-color: var(--text);
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1.1rem 1.2rem;
+  background: var(--bg);
+  transition: border-color 0.15s, transform 0.15s;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.card:hover {
+  border-color: var(--muted);
+}
+
+.card:visited { color: inherit; }
+
+.card:hover .card-title { text-decoration: underline; }
+
+.card-arrow {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1;
+}
+
+.card:hover .card-arrow { color: var(--text); }
+
+.card-cat {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-family: var(--font-prose);
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.card-desc {
+  font-family: var(--font-prose);
+  font-size: 0.82rem;
+  line-height: 1.55;
+  color: var(--text);
+  margin-bottom: 0.9rem;
+  flex: 1;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.card-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 0.05em 0.4em;
+  letter-spacing: 0.04em;
+}
+
+.cat-section {
+  margin-top: 2.5rem;
+}
+
+.cat-section-label {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.card[hidden] { display: none; }
+
+/* ============================================================
    Responsive — collapse sidebar at ≤ 780px
    ============================================================ */
 @media (max-width: 780px) {
