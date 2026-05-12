@@ -540,6 +540,23 @@ h3 { font-size: 1rem;    margin-bottom: 0.4rem; margin-top: 1.8rem; }
   text-decoration: underline;
 }
 
+.translate-link {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  margin-top: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.translate-link a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.translate-link a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
 /* ============================================================
    Sidenotes
    ============================================================ */

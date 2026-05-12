@@ -5,10 +5,18 @@
     <link>https://nikomc.com</link>
     <description>Writing on biology.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nikomc.com/feed.xml" rel="self" type="application/rss+xml"/>
     <managingEditor>nsmccarty3@gmail.com (Niko McCarty)</managingEditor>
     <webMaster>nsmccarty3@gmail.com (Niko McCarty)</webMaster>
+    <item>
+      <title>Underrated Ideas in Biotech</title>
+      <link>https://nikomc.com/essays/underrated-ideas-in-biotech.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/underrated-ideas-in-biotech.html</guid>
+      <description>Three half-baked ideas in biotechnology: hyperspectral biology, engineering beauty, and mapping the air and oceans.</description>
+      <category>essay</category>
+      <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>PCR is a (Surprisingly) Near-Optimal Technology</title>
       <link>https://nikomc.com/essays/pcr-near-optimal.html</link>
