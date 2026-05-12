@@ -540,22 +540,67 @@ h3 { font-size: 1rem;    margin-bottom: 0.4rem; margin-top: 1.8rem; }
   text-decoration: underline;
 }
 
-.translate-link {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
+/* ============================================================
+   Translate widget (Google Translate, in-page)
+   ============================================================ */
+.translate-widget {
   margin-top: 0.6rem;
   margin-bottom: 1.5rem;
 }
 
-.translate-link a {
+.translate-toggle {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
   color: var(--muted);
-  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
 }
 
-.translate-link a:hover {
+.translate-toggle:hover {
   color: var(--text);
   text-decoration: underline;
 }
+
+#google_translate_element {
+  margin-top: 0.5rem;
+}
+
+#google_translate_element .goog-te-gadget {
+  font-family: var(--font-mono) !important;
+  font-size: 0.78rem !important;
+  color: var(--muted) !important;
+}
+
+#google_translate_element .goog-te-gadget-simple {
+  background: var(--bg) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 2px !important;
+  padding: 0.3rem 0.55rem !important;
+  font-size: 0.8rem !important;
+  line-height: 1.2 !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value {
+  color: var(--text) !important;
+}
+
+#google_translate_element .goog-te-gadget-simple .goog-te-menu-value span {
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+#google_translate_element img { display: none !important; }
+
+/* Hide Google's injected top banner that shifts the page down. */
+body { top: 0 !important; }
+.skiptranslate.goog-te-banner-frame,
+iframe.goog-te-banner-frame,
+.goog-te-banner-frame { display: none !important; }
+.goog-tooltip, .goog-tooltip:hover { display: none !important; }
+.goog-text-highlight { background-color: transparent !important; box-shadow: none !important; }
 
 /* ============================================================
    Sidenotes
