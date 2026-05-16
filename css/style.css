@@ -957,6 +957,59 @@ footer a:hover { text-decoration: underline; }
 .card[hidden] { display: none; }
 
 /* ============================================================
+   Link cards (used in essays with curated link lists)
+   ============================================================ */
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.55rem;
+  margin: 0.5rem 0 1.75rem;
+}
+
+.post-body .link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.65rem 0.75rem;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--bg);
+  transition: border-color 0.15s;
+}
+
+.post-body .link-card:hover {
+  border-color: var(--muted);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.post-body .link-card:visited { color: var(--text); }
+
+.link-card-title {
+  font-family: var(--font-prose);
+  font-size: 0.76rem;
+  line-height: 1.3;
+  color: var(--text);
+}
+
+.link-card-author {
+  font-size: 0.69rem;
+  font-style: italic;
+  color: var(--muted);
+  font-family: var(--font-serif);
+  line-height: 1.3;
+}
+
+.link-card--rec .link-card-title::before {
+  content: "✦ ";
+  font-size: 0.6rem;
+  color: var(--muted);
+  vertical-align: middle;
+}
+
+/* ============================================================
    Responsive — collapse sidebar at ≤ 780px
    ============================================================ */
 @media (max-width: 780px) {
@@ -1074,4 +1127,11 @@ footer a:hover { text-decoration: underline; }
   /* Post list */
   .post-list li { flex-wrap: wrap; gap: 0.2rem; }
   .post-list .post-date { min-width: unset; }
+
+  /* Link card grid: 2 columns on tablet/mobile */
+  .link-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .link-grid { grid-template-columns: 1fr; }
 }
