@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Big Ideas in Biology — a running notebook of problems, bets, and ambitions worth pursuing.">
+  <title>Big Ideas in Biology — Niko McCarty</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+</head>
+<body class="manifesto-page">
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="about.html">About</a>
+          <a href="essays.html">Essays</a>
+          <a href="shortform.html">Shortform</a>
+          <a href="manifesto.html" class="active">Big Ideas</a>
+          <a href="writing.html">Published Writing</a>
+          <a href="research.html">Research</a>
+          <a href="bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
+          <a href="https://tinybio.org" target="_blank" rel="noopener">Microgrants ↗</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <h1>Big Ideas in Biology</h1>
+
+        <div class="manifesto-intro">
+          <p>A running notebook of problems, ideas, and ambitions in biology that I think are exceptionally interesting — and that I hope someone reading this will actually work on. Biotechnology is not just about therapeutics. There are extraordinary problems to be solved at every scale, from molecules to ecosystems, and this guide is meant especially for students trying to figure out what to do next.</p>
+          <p>Version 1.0 is ten ideas per category. Cards are living documents and will be revised, expanded, and added to over time. You can filter by category or scroll the full list.</p>
+        </div>
+
+        <div class="cat-filter" id="cat-filter">
+          <button class="cat-chip active" data-cat="all">All</button>
+          <button class="cat-chip" data-cat="infectious">Treat or Prevent Illness</button>
+          <button class="cat-chip" data-cat="complex">Cure a Complex Disease</button>
+          <button class="cat-chip" data-cat="healthspan">Extend Human Healthspan</button>
+          <button class="cat-chip" data-cat="ecosystems">Restore Ecosystems</button>
+          <button class="cat-chip" data-cat="multiplanet">Make Life Multiplanetary</button>
+          <button class="cat-chip" data-cat="animals">Reduce Animal Suffering</button>
+          <button class="cat-chip" data-cat="food">Abundant and Nutritious Food</button>
+          <button class="cat-chip" data-cat="beauty">Make Beautiful Things</button>
+          <button class="cat-chip" data-cat="biosecurity">Biosecurity</button>
+        </div>
+
+        <div class="card-grid" id="card-grid">
+
+          <a class="card" data-cat="infectious" href="manifesto/universal-flu-vaccine.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">Universal influenza vaccines</h3>
+            <p class="card-desc">Placeholder. What it would take to make annual flu shots obsolete and eliminate seasonal pandemic risk.</p>
+            <div class="card-tags"><span class="card-tag">vaccines</span><span class="card-tag">virology</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/phage-therapy-platform.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">Rapid design of phage therapies</h3>
+            <p class="card-desc">Placeholder. Going from a patient's resistant infection to a custom phage cocktail in days, not months — biobanks, engineering, and a regulatory path.</p>
+            <div class="card-tags"><span class="card-tag">phage</span><span class="card-tag">amr</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/strep-a-vaccines.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">Strep A vaccines</h3>
+            <p class="card-desc">Placeholder. Group A strep kills ~500K/year via rheumatic heart disease. Why there&#x27;s still no licensed vaccine after 100 years of trying.</p>
+            <div class="card-tags"><span class="card-tag">vaccines</span><span class="card-tag">bacteria</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/broad-spectrum-prophylactics.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">Broad-spectrum prophylactics</h3>
+            <p class="card-desc">Placeholder. Daily or monthly pills that prevent infection across many pathogens — the antiviral equivalent of PrEP, but for whole viral families.</p>
+            <div class="card-tags"><span class="card-tag">antivirals</span><span class="card-tag">prophylaxis</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/modern-tb-vaccine.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">A modern TB vaccine</h3>
+            <p class="card-desc">Placeholder. TB still kills 1.2M/year, defended by a 1919 vaccine. Finishing Phase 3 of M72/AS01E and building adolescent delivery infrastructure.</p>
+            <div class="card-tags"><span class="card-tag">vaccines</span><span class="card-tag">tb</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/mrna-platforms.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">mRNA as a general vaccine platform</h3>
+            <p class="card-desc">Placeholder. Beyond COVID — thermostable, self-amplifying, and T-cell-eliciting mRNA designs that work for TB, HIV, malaria, and the next outbreak.</p>
+            <div class="card-tags"><span class="card-tag">vaccines</span><span class="card-tag">mrna</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/pest-control.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">Genetic and microbial pest control</h3>
+            <p class="card-desc">Placeholder. CRISPR gene drives, <em>Wolbachia</em>-infected <em>Aedes</em>, and sterile insect releases — the full toolkit for crashing or replacing disease-vector populations.</p>
+            <div class="card-tags"><span class="card-tag">vector-control</span><span class="card-tag">gene-drive</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/ai-antibiotic-discovery.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">AI for antibiotic discovery</h3>
+            <p class="card-desc">Placeholder. Deep-learning models that screen billions of molecules for novel scaffolds active against resistant bacteria — refilling a pipeline industry abandoned decades ago.</p>
+            <div class="card-tags"><span class="card-tag">antibiotics</span><span class="card-tag">ml</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/portable-diagnostics.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">On-demand, portable, real-time diagnostics</h3>
+            <p class="card-desc">Placeholder. Handheld devices that take a drop of blood, saliva, or urine and return a differential diagnosis — at any clinic, home, or field site, in under an hour.</p>
+            <div class="card-tags"><span class="card-tag">diagnostics</span><span class="card-tag">hardware</span></div>
+          </a>
+
+          <a class="card" data-cat="infectious" href="manifesto/antivenoms.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Treat or Prevent Illness</div>
+            <h3 class="card-title">Better antivenoms</h3>
+            <p class="card-desc">Placeholder. Venom-gland organoids that replace milking live snakes, and de novo designed proteins against conserved toxin families — a stable, broad, animal-free alternative to horse-serum.</p>
+            <div class="card-tags"><span class="card-tag">venom</span><span class="card-tag">protein-design</span></div>
+          </a>
+
+          <a class="card" data-cat="complex" href="manifesto/alzheimers-disease.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Cure a Complex Disease</div>
+            <h3 class="card-title">Crack Alzheimer&#x27;s</h3>
+            <p class="card-desc">Placeholder. The decades of failed amyloid trials, what they ruled out, and which bets are still open.</p>
+            <div class="card-tags"><span class="card-tag">neuro</span></div>
+          </a>
+
+          <a class="card" data-cat="complex" href="manifesto/type-1-diabetes.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Cure a Complex Disease</div>
+            <h3 class="card-title">Functional cure for type 1 diabetes</h3>
+            <p class="card-desc">Placeholder. Encapsulated islets, immune evasion, and the path past lifelong insulin.</p>
+            <div class="card-tags"><span class="card-tag">diabetes</span><span class="card-tag">cell-therapy</span></div>
+          </a>
+
+          <a class="card" data-cat="complex" href="manifesto/solid-tumors.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Cure a Complex Disease</div>
+            <h3 class="card-title">Solid tumors</h3>
+            <p class="card-desc">Placeholder. Why CAR-T worked for blood cancers and stalled for solid ones, and what closes the gap.</p>
+            <div class="card-tags"><span class="card-tag">cancer</span></div>
+          </a>
+
+          <a class="card" data-cat="healthspan" href="manifesto/biological-age.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Extend Human Healthspan</div>
+            <h3 class="card-title">A reliable clock for biological age</h3>
+            <p class="card-desc">Placeholder. Measuring the thing we actually want to slow, with enough precision to run trials.</p>
+            <div class="card-tags"><span class="card-tag">aging</span><span class="card-tag">measurement</span></div>
+          </a>
+
+          <a class="card" data-cat="healthspan" href="manifesto/senescence-clearance.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Extend Human Healthspan</div>
+            <h3 class="card-title">Clear senescent cells, safely</h3>
+            <p class="card-desc">Placeholder. Senolytics that work in humans without collateral damage.</p>
+            <div class="card-tags"><span class="card-tag">aging</span></div>
+          </a>
+
+          <a class="card" data-cat="healthspan" href="manifesto/muscle-loss.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Extend Human Healthspan</div>
+            <h3 class="card-title">Stop sarcopenia</h3>
+            <p class="card-desc">Placeholder. Most people lose strength faster than anything else as they age. A drug or regimen that reverses it.</p>
+            <div class="card-tags"><span class="card-tag">aging</span><span class="card-tag">metabolism</span></div>
+          </a>
+
+          <a class="card" data-cat="ecosystems" href="manifesto/coral-reefs.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Restore Ecosystems</div>
+            <h3 class="card-title">Save the coral reefs</h3>
+            <p class="card-desc">Placeholder. Heat-tolerant corals, microbial assists, and what an ambitious restoration program looks like.</p>
+            <div class="card-tags"><span class="card-tag">marine</span><span class="card-tag">climate</span></div>
+          </a>
+
+          <a class="card" data-cat="ecosystems" href="manifesto/invasive-species.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Restore Ecosystems</div>
+            <h3 class="card-title">Surgical removal of invasive species</h3>
+            <p class="card-desc">Placeholder. Gene drives, sterile-male releases, and the governance question that goes with them.</p>
+            <div class="card-tags"><span class="card-tag">gene-drive</span></div>
+          </a>
+
+          <a class="card" data-cat="ecosystems" href="manifesto/soil-microbiome.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Restore Ecosystems</div>
+            <h3 class="card-title">Restore soil microbiomes at scale</h3>
+            <p class="card-desc">Placeholder. Most agricultural soil is biologically depleted. A program to fix it without halting yield.</p>
+            <div class="card-tags"><span class="card-tag">soil</span><span class="card-tag">microbiome</span></div>
+          </a>
+
+          <a class="card" data-cat="multiplanet" href="manifesto/closed-loop-life-support.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Make Life Multiplanetary</div>
+            <h3 class="card-title">Closed-loop biological life support</h3>
+            <p class="card-desc">Placeholder. Algae, plants, and microbes that recycle air, water, and nutrients for years without intervention.</p>
+            <div class="card-tags"><span class="card-tag">space</span><span class="card-tag">synbio</span></div>
+          </a>
+
+          <a class="card" data-cat="multiplanet" href="manifesto/radiation-tolerance.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Make Life Multiplanetary</div>
+            <h3 class="card-title">Radiation-tolerant humans (and crops)</h3>
+            <p class="card-desc">Placeholder. Tardigrade-derived protection, DNA repair upgrades, and shielding alternatives for deep space.</p>
+            <div class="card-tags"><span class="card-tag">space</span><span class="card-tag">genetics</span></div>
+          </a>
+
+          <a class="card" data-cat="multiplanet" href="manifesto/in-situ-biomanufacturing.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Make Life Multiplanetary</div>
+            <h3 class="card-title">In-situ biomanufacturing on Mars</h3>
+            <p class="card-desc">Placeholder. Yeast and bacteria that produce drugs, plastics, and food from CO₂ and regolith.</p>
+            <div class="card-tags"><span class="card-tag">space</span><span class="card-tag">synbio</span></div>
+          </a>
+
+          <a class="card" data-cat="animals" href="manifesto/cultivated-meat-cost.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Reduce Animal Suffering</div>
+            <h3 class="card-title">Cultivated meat at price parity</h3>
+            <p class="card-desc">Placeholder. The bioreactor, media, and scaffold problems that still gate cultivated meat from the grocery aisle.</p>
+            <div class="card-tags"><span class="card-tag">food</span><span class="card-tag">ethics</span></div>
+          </a>
+
+          <a class="card" data-cat="animals" href="manifesto/lab-animal-alternatives.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Reduce Animal Suffering</div>
+            <h3 class="card-title">Replace lab animals with organoids</h3>
+            <p class="card-desc">Placeholder. Organ-on-chip systems good enough to retire most pre-clinical mouse work.</p>
+            <div class="card-tags"><span class="card-tag">organoids</span><span class="card-tag">drug-discovery</span></div>
+          </a>
+
+          <a class="card" data-cat="animals" href="manifesto/fish-welfare.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Reduce Animal Suffering</div>
+            <h3 class="card-title">Take fish welfare seriously</h3>
+            <p class="card-desc">Placeholder. Aquaculture is now the largest source of animal protein. The welfare science hasn&#x27;t caught up.</p>
+            <div class="card-tags"><span class="card-tag">aquaculture</span></div>
+          </a>
+
+          <a class="card" data-cat="food" href="manifesto/nitrogen-fixation.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Abundant and Nutritious Food</div>
+            <h3 class="card-title">Cereal crops that fix their own nitrogen</h3>
+            <p class="card-desc">Placeholder. Engineering legume-style symbiosis into wheat, rice, and corn — the holy grail of agronomy.</p>
+            <div class="card-tags"><span class="card-tag">agriculture</span><span class="card-tag">synbio</span></div>
+          </a>
+
+          <a class="card" data-cat="food" href="manifesto/perennial-grains.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Abundant and Nutritious Food</div>
+            <h3 class="card-title">Perennial grain crops</h3>
+            <p class="card-desc">Placeholder. Annual tillage destroys soil. Perennial wheat would fix that, if we can get the yield up.</p>
+            <div class="card-tags"><span class="card-tag">agriculture</span></div>
+          </a>
+
+          <a class="card" data-cat="food" href="manifesto/micronutrients.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Abundant and Nutritious Food</div>
+            <h3 class="card-title">Engineered micronutrients in staple crops</h3>
+            <p class="card-desc">Placeholder. Beyond Golden Rice — a serious program for iron, zinc, B12, and omega-3 in the foods people actually eat.</p>
+            <div class="card-tags"><span class="card-tag">nutrition</span><span class="card-tag">agriculture</span></div>
+          </a>
+
+          <a class="card" data-cat="beauty" href="manifesto/living-materials.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Make Beautiful Things</div>
+            <h3 class="card-title">Living architectural materials</h3>
+            <p class="card-desc">Placeholder. Buildings that grow, self-heal, and sequester carbon. Mycelium, engineered wood, microbial concrete.</p>
+            <div class="card-tags"><span class="card-tag">materials</span></div>
+          </a>
+
+          <a class="card" data-cat="beauty" href="manifesto/bio-pigments.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Make Beautiful Things</div>
+            <h3 class="card-title">Pigments from microbes</h3>
+            <p class="card-desc">Placeholder. Replace petrochemical dyes with engineered colors — richer, more permanent, less toxic.</p>
+            <div class="card-tags"><span class="card-tag">chemistry</span><span class="card-tag">design</span></div>
+          </a>
+
+          <a class="card" data-cat="beauty" href="manifesto/designer-organisms.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Make Beautiful Things</div>
+            <h3 class="card-title">Designed organisms as art</h3>
+            <p class="card-desc">Placeholder. Bioluminescent plants, programmable patterns on skin, ornamental species engineered for beauty.</p>
+            <div class="card-tags"><span class="card-tag">aesthetics</span><span class="card-tag">synbio</span></div>
+          </a>
+
+          <a class="card" data-cat="biosecurity" href="manifesto/pandemic-early-warning.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Biosecurity</div>
+            <h3 class="card-title">Pandemic early-warning, everywhere</h3>
+            <p class="card-desc">Placeholder. Wastewater, air, and clinical surveillance dense enough to catch the next outbreak in days, not months.</p>
+            <div class="card-tags"><span class="card-tag">surveillance</span><span class="card-tag">metagenomics</span></div>
+          </a>
+
+          <a class="card" data-cat="biosecurity" href="manifesto/dna-synthesis-screening.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Biosecurity</div>
+            <h3 class="card-title">Universal DNA synthesis screening</h3>
+            <p class="card-desc">Placeholder. Every order from every provider screened against pathogen databases, with shared red-flags and audit trails.</p>
+            <div class="card-tags"><span class="card-tag">synthesis</span><span class="card-tag">policy</span></div>
+          </a>
+
+          <a class="card" data-cat="biosecurity" href="manifesto/broad-spectrum-medical-countermeasures.html">
+            <span class="card-arrow">&rarr;</span>
+            <div class="card-cat">Biosecurity</div>
+            <h3 class="card-title">Broad-spectrum medical countermeasures</h3>
+            <p class="card-desc">Placeholder. Antivirals, antibody platforms, and vaccines designed to work against pathogens we haven't seen yet.</p>
+            <div class="card-tags"><span class="card-tag">countermeasures</span><span class="card-tag">vaccines</span></div>
+          </a>
+
+        </div>
+      </main>
+
+      <footer>
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/nikomc"
+          method="post"
+          class="bd-form bd-form--footer embeddable-buttondown-form"
+        >
+          <p class="bd-label">Join 10,000+ readers</p>
+          <div class="bd-row">
+            <input type="email" name="email" id="bd-email-footer" placeholder="your@email.com" required>
+            <input type="hidden" name="tag" value="nikomc.com">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    (function(){
+      var filter = document.getElementById('cat-filter');
+      var cards = document.querySelectorAll('#card-grid .card');
+      filter.addEventListener('click', function(e){
+        var btn = e.target.closest('.cat-chip');
+        if(!btn) return;
+        var cat = btn.dataset.cat;
+        filter.querySelectorAll('.cat-chip').forEach(function(b){ b.classList.toggle('active', b === btn); });
+        cards.forEach(function(card){
+          card.hidden = !(cat === 'all' || card.dataset.cat === cat);
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
