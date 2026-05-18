@@ -5,10 +5,18 @@
     <link>https://nikomc.com</link>
     <description>Writing on biology.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://nikomc.com/feed.xml" rel="self" type="application/rss+xml"/>
     <managingEditor>nsmccarty3@gmail.com (Niko McCarty)</managingEditor>
     <webMaster>nsmccarty3@gmail.com (Niko McCarty)</webMaster>
+    <item>
+      <title>Visuals That Work &amp;mdash; Niko McCarty</title>
+      <link>https://nikomc.com/essays/visuals-that-work.html</link>
+      <guid isPermaLink="true">https://nikomc.com/essays/visuals-that-work.html</guid>
+      <description>A list of visuals that make science more legible and exciting — interactive essays, paintings, videos, and charts that do real explanatory work.</description>
+      <category>essay</category>
+      <pubDate>Sat, 16 May 2026 00:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Underrated Ideas in Biotech (Part I)</title>
       <link>https://nikomc.com/essays/underrated-ideas-01.html</link>
