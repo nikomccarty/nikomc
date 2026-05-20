@@ -156,9 +156,9 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    if (window.matchMedia('(max-width: 780px)').matches) {
-      buildMobileSidenotes();
-    }
+    buildMobileSidenotes();
+    var mq = window.matchMedia('(max-width: 780px)');
+    mq.addEventListener('change', buildMobileSidenotes);
   });
 
   /* --------------------------------------------------------
