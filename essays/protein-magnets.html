@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Further readings and notes for my conversation with Andrew York and Maria Ingaramo on magnetic control of proteins.">
+  <meta name="post-tag" content="shortform">
+  <title>How to Control Proteins with Magnets &mdash; Reading Notes &mdash; Niko McCarty</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <script>
+    (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
+  </script>
+  <link rel="stylesheet" href="../css/style.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3J0ZM0DTYT');
+  </script>
+  <link rel="canonical" href="https://nikomc.com/essays/protein-magnets.html">
+  <meta name="author" content="Niko McCarty">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Niko McCarty">
+  <meta property="og:title" content="How to Control Proteins with Magnets &mdash; Reading Notes">
+  <meta property="og:description" content="Further readings and notes for my conversation with Andrew York and Maria Ingaramo on magnetic control of proteins.">
+  <meta property="og:url" content="https://nikomc.com/essays/protein-magnets.html">
+  <meta property="og:image" content="https://nikomc.com/favicon.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@NikoMcCarty">
+  <meta name="twitter:creator" content="@NikoMcCarty">
+  <meta name="twitter:title" content="How to Control Proteins with Magnets &mdash; Reading Notes">
+  <meta name="twitter:description" content="Further readings and notes for my conversation with Andrew York and Maria Ingaramo on magnetic control of proteins.">
+  <meta name="twitter:image" content="https://nikomc.com/favicon.svg">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ShortStory",
+  "headline": "How to Control Proteins with Magnets — Reading Notes",
+  "description": "Further readings and notes for my conversation with Andrew York and Maria Ingaramo on magnetic control of proteins.",
+  "url": "https://nikomc.com/essays/protein-magnets.html",
+  "author": {
+    "@type": "Person",
+    "name": "Niko McCarty",
+    "url": "https://nikomc.com/about.html"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Niko McCarty"
+  },
+  "mainEntityOfPage": "https://nikomc.com/essays/protein-magnets.html",
+  "datePublished": "2026-05-22",
+  "dateModified": "2026-05-22"
+}
+  </script>
+
+</head>
+<body>
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-top">
+          <p class="site-name"><a href="../index.html">Niko McCarty</a></p>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg class="icon-moon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13.5 10A6 6 0 0 1 6 2.5a6 6 0 1 0 7.5 7.5z"/></svg>
+            <svg class="icon-sun"  viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="3"/><line x1="8" y1="1" x2="8" y2="3"/><line x1="8" y1="13" x2="8" y2="15"/><line x1="1" y1="8" x2="3" y2="8"/><line x1="13" y1="8" x2="15" y2="8"/><line x1="3" y1="3" x2="4.5" y2="4.5"/><line x1="11.5" y1="11.5" x2="13" y2="13"/><line x1="13" y1="3" x2="11.5" y2="4.5"/><line x1="4.5" y1="11.5" x2="3" y2="13"/></svg>
+            <span>Toggle Light</span>
+          </button>
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+            <svg class="icon-open"  viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6"  x2="19" y2="6"/><line x1="3" y1="11" x2="19" y2="11"/><line x1="3" y1="16" x2="19" y2="16"/></svg>
+            <svg class="icon-close" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="display:none"><line x1="4" y1="4" x2="18" y2="18"/><line x1="18" y1="4" x2="4" y2="18"/></svg>
+          </button>
+        </div>
+        <nav id="main-nav" aria-label="Site navigation">
+          <a href="../about.html">About</a>
+          <a href="../essays.html">Essays</a>
+          <a href="../shortform.html" class="active">Shortform</a>
+          <a href="../writing.html">Published Writing</a>
+          <a href="../bookshelf.html">Bookshelf</a>
+          <a href="https://burrito.bio" target="_blank" rel="noopener">Book &#8599;</a>
+          <a href="https://tinybio.netlify.app" target="_blank" rel="noopener">Microgrants &#8599;</a>
+          <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast &#8599;</a>
+        </nav>
+        <div class="nav-social">
+          <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter / X</a>
+          <a href="https://www.linkedin.com/in/nsmccarty/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:nsmccarty3@gmail.com">Email</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <main>
+        <a href="../shortform.html" class="back-link">&larr; Shortform</a>
+
+        <div class="post-header">
+          <h1>How to Control Proteins with Magnets &mdash; Reading Notes</h1>
+          <p class="post-meta">
+            May 22, 2026
+            <span class="post-meta-tag">shortform</span>
+          </p>
+          <div class="translate-widget">
+            <button type="button" class="translate-toggle" aria-expanded="false" aria-controls="google_translate_element">Read in another language &rarr;</button>
+            <div id="google_translate_element" hidden></div>
+          </div>
+
+        </div>
+
+        <div class="post-body">
+
+          <p>Further readings and notes for my conversation with Andrew York and Maria Ingaramo.</p>
+
+          <p><strong><a href="https://www.youtube.com/watch?v=k0UIrSLPnYE" target="_blank" rel="noopener">Using Magnets to Kill Cancer with Precision</a></strong></p>
+
+          <ul>
+            <li>The whole idea really started with Adam Cohen; he had an interest in magnetogenetics. Interest in the field flared in 2015 because people figured out that this might be how birds navigate or sense magnetic fields. Cells have a lot of iron and would align in magnetic fields.</li>
+            <li>Meister pushed back significantly on this work, arguing that you can&#8217;t actually tweak tiny bits of iron that way, and so on. The field went into a &#8220;dark age&#8221; for a while.</li>
+            <li>Adam Cohen comes in and points out that there are some small molecule dyes that respond to magnets, and that this was something objective and measurable. It was real. So Nonfiction Labs took this idea; Maria wanted to know if she could also get biological proteins to change fluorescence intensity in magnetic fields.
+              <ul><li>Directed evolution experiments led to AsLOV2.</li></ul>
+            </li>
+            <li>With magnetogenetics, it&#8217;s like optogenetics, but these proteins don&#8217;t <em>normally</em> respond to magnets at all; it&#8217;s a new mechanism that is being engineered or evolved by human hands.
+              <ul><li>A lot of biology is done by discovering natural mechanisms, but magnetogenetics seems to be somewhat of an exception. Isn&#8217;t that a bit strange?</li></ul>
+            </li>
+            <li>Adam Cohen has proposed mechanisms, but the mechanism is still <em>somewhat</em> poorly understood.</li>
+            <li>&#8220;Can you control useful biology with magnets?&#8221; was a guiding question early on. It seemed like a narrow path was there if the physics worked out. The company was founded to take this same idea of magnetic control and apply it.</li>
+            <li>Magnetically inducible therapeutics or enzymes?
+              <ul><li>How do they spend their time? How do they follow where the market is and shape their allocation between basic R&amp;D and trying to make money? Is most effort going toward rational engineering for this effect, such that you can co-opt it into any system?</li></ul>
+            </li>
+            <li>Magnetogenetics just means it&#8217;s genetically encoded; so this isn&#8217;t really magnetogenetics, right? Optogenetics has been enormously useful for basic R&amp;D, but you can&#8217;t do a lot of therapeutic work with it.
+              <ul>
+                <li>Mostly focused on antibodies.</li>
+                <li>The physical limits of various modalities is really interesting to talk about. Where are magnets better than ultrasound, and better than light?</li>
+              </ul>
+            </li>
+            <li>You can either make new drugs with new mechanisms that are only active at the tumor site, <em>or</em> attach this new mechanism to already-approved drugs and just make them more precise at tumor sites. Interesting to think about; you&#8217;d have to go back through approval, right?
+              <ul>
+                <li>It could make new targets become viable because they could be activated more specifically. &#8220;I wish I could hit this target, we have great data on it, but the toxicity isn&#8217;t going to work out.&#8221; Perhaps magnetogenetics could help there. So presumably they are doing basic R&amp;D to figure out how to control these mechanisms reliably, such that they can license the IP to any pharma company. Ask about this. Try to move the target question away from where proteins go naturally and all this complex biology that is irreducible in the trial &mdash; can we instead make the problem simpler and easier to simulate?</li>
+                <li>Would pharma companies be open to taking this leap?</li>
+              </ul>
+            </li>
+            <li>Also spends a lot of time working with academic labs (besides R&amp;D); academics get to do science and get the paper, and Nonfiction Labs gets to figure out how these things work in mice, etc.
+              <ul><li>For the first time, there&#8217;s a way to control biology that doesn&#8217;t affect healthy tissue and makes tissue fully transparent, basically. As a research tool, it is amazing. Isn&#8217;t focused ultrasound basically just as good, or maybe even better?</li></ul>
+            </li>
+            <li>On magnetically inducible enzymes: they engineered a luciferase in this way. Luciferase emits photons; lots of critters make it. Magnetically controlled luciferase is a shortcut to optogenetic tools &mdash; it dims near magnets. They could fuse it onto an opto system; a hacky but fast way to make optogenetics magnetically controllable. Very interesting; redeveloping optogenetics using this new enzyme.
+              <ul>
+                <li>But you&#8217;d still need to get these optogenetic proteins into cells, right? It&#8217;s still invasive.</li>
+                <li>What magnetic field strength do you need? It saturates at 10&ndash;20 millitesla; that&#8217;s actually about the surface field of a fridge magnet. This would not work through a skull, for example. It&#8217;s about at the level of a pacemaker warning label. Technically, the FDA says that if you have an iPhone with MagSafe magnets on the back, you need to put it in a case if you have a pacemaker.</li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong><a href="https://andrewgyork.github.io/gfp_magnetofluorescence/" target="_blank" rel="noopener">Protein Magnetofluorescence</a></strong></p>
+
+          <ul>
+            <li>Shows that magnetically inert proteins, like GFP, become sensitive to magnets in the presence of a flavin cofactor.</li>
+            <li>&#8220;Suggests the possibility that magnetoresponse is a general feature of fluorescent proteins, and not unique to the cryptochrome&hellip;family.&#8221;
+              <ul><li>But how do you then move this to non-fluorescent proteins?</li></ul>
+            </li>
+            <li>This blog was updated to comment on MagLOV.</li>
+          </ul>
+
+          <figure>
+            <img src="../images/shortform/protein-magnets/egfp-flavintag-trace.png" alt="Fluorescence trace of EGFP-FlavinTag in E. coli over ~150 seconds, with alternating gray bands indicating magnetic field on/off intervals. The main plot shows fluorescence near 41,500 with a slight downward drift. An inset zooms into 110–140 seconds, revealing small but clear rises and falls of ~100 fluorescence units synchronized with the field-on/off intervals.">
+            <figcaption>Fluorescence of EGFP-FlavinTag in <em>E. coli</em> while a magnetic field is toggled on and off. The inset shows that fluorescence rises and falls by roughly 100 units (out of ~41,500) in sync with the field &mdash; a tiny but reproducible effect, and the first hint that an otherwise magnetically inert protein can be made magnetically responsive in the presence of a flavin cofactor.</figcaption>
+          </figure>
+
+          <p><strong><a href="https://nonfictionlaboratories.com/" target="_blank" rel="noopener">Nonfiction Laboratories</a></strong></p>
+
+          <ul>
+            <li>One of the linked papers is <a href="https://www.biorxiv.org/content/10.1101/2025.02.27.640669v1" target="_blank" rel="noopener">Magnetic Resonance Control of Reaction Yields Through Genetically-Encoded Protein:Flavin Spin-Correlated Radicals in a Live Animal</a>.</li>
+            <li>&#8220;Here we report the modification of the emission of various red fluorescent proteins (RFPs), in the presence of a flavin cofactor, induced by a combination of static and RF magnetic fields.&#8221;</li>
+            <li>Why is flavin required? And if you always need to add this cofactor, how can you build self-contained molecules that are therapeutically active <em>and</em> magnetically switchable?</li>
+          </ul>
+
+          <p><strong><a href="https://www.science.org/content/article/magnetically-sensitive-proteins-could-lead-new-imaging-tools-and-remote-controlled" target="_blank" rel="noopener">Magnetically Sensitive Proteins Could Lead to New Imaging Tools and Remote-Controlled Drugs</a></strong></p>
+
+          <ul>
+            <li>Could be used to make &#8220;MRI-like imagers capable of tracking disease-linked proteins throughout the body, as well as the development of novel drugs that could be remotely switched on and off with magnets.&#8221;</li>
+            <li>Protons in water &#8220;behave like tiny spinning bar magnets.&#8221; So in a sense, all water is magnetically responsive, no? Then why wouldn&#8217;t biology as a whole also be super magnetically sensitive?</li>
+            <li>Ingaramo 2024 was basically the first time this was applied to a biological protein (and not an organic molecule), right? Check this.</li>
+            <li>&#8220;Why this dimming was occurring wasn&#8217;t entirely clear until last year, when Cohen and his colleagues laid out the subtle principles at work in a study in the <em>Journal of the American Chemical Society</em>. When laser light excites fluorescent proteins, electrons can hop to nearby molecules called flavins that are ubiquitous in cells, forming pairs of electrons whose spins are either parallel or antiparallel. Electrons in antiparallel pairs are most likely to hop back to the protein, giving up their excess energy as light in the process. But adding a magnetic field, Cohen and his colleagues found, slows this return by <a href="https://pubs.acs.org/doi/10.1021/jacs.5c03997" target="_blank" rel="noopener">suppressing the formation of electron pairs with antiparallel spins</a>. &#8216;So the fluorescence goes down,&#8217; Cohen says.&#8221;</li>
+            <li>For some reason, they evolved proteins to respond to both magnetic fields <em>and</em> radio frequency pulses, because the latter &#8220;can be focused much more sharply than a magnetic field.&#8221; I need to dig more into this.
+              <ul><li>Unpublished work: use of magnetic fields to decrease the binding strength of antibodies to targets. Why not do the reverse? Is it harder to use a magnet to <em>induce</em> or promote binding, for whatever reason?</li></ul>
+            </li>
+          </ul>
+
+          <p><strong><a href="https://blog.addgene.org/magnetic-control-of-proteins" target="_blank" rel="noopener">Magnetic Control of Proteins: More than a Dream</a></strong></p>
+
+          <ul>
+            <li>&#8220;Andrew and Maria dreamed about the possibilities of a magnetoresponsive fluorescent protein.&#8221;
+              <ul><li>Where did the origins actually come from? What were they doing?</li></ul>
+            </li>
+            <li>Wow: the very first protein they tested, just GFP in <em>E. coli</em>, showed a detectable change in fluorescence when exposed to a magnetic field. But the effect is tiny &mdash; the peaks are from like 41,500 to 41,600, an absolute change of almost nothing. Why did they think this might be significant? Why had nobody else seen it before?
+              <ul><li>Multiple other labs confirmed the result.</li></ul>
+            </li>
+            <li>The directed evolution experiments were done on EGFP, mScarlet, and AsLOV2. Semi-random mutagenesis and screening. EGFP and mScarlet did not improve (why not?). The AsLOV2 screen turned up gains; why did that work and not the others?
+              <ul><li>&#8220;After a few more rounds of mutagenesis, they eventually found a version of AsLOV2 with five mutations (C450P, L496V, Q513K, G528K, D540M) that shows a fluorescence change of ~75% in response to the magnetic field (Figure 2); they named this variant <a href="https://www.addgene.org/219957/" target="_blank" rel="noopener">MagLOV</a>.&#8221; <em>No cofactors required! Works in every type of cell!</em></li></ul>
+            </li>
+            <li>The gains changed drastically; the signal now jumps from around 2,000 fluorescence units to 3,400.
+              <ul><li>&#8220;Currently, the team is working to identify how MagLOV&#8217;s structure changes under magnetic field. Such changes could be harnessed or enhanced for future MagLOV-based tools, just as light-induced conformational changes are the basis of many optogenetic tools. And, since MagLOV&#8217;s parent protein <a href="https://www.addgene.org/search/catalog/plasmids/?q=LOV2" target="_blank" rel="noopener">AsLOV2</a> has already been adapted into a variety of optogenetic tools, they&#8217;re optimistic that MagLOV can be similarly adaptable into future magnetogenetic tools.&#8221;</li></ul>
+            </li>
+          </ul>
+
+          <p><strong><a href="https://www.nature.com/articles/s41586-025-09971-3" target="_blank" rel="noopener">Quantum Spin Resonance in Engineered Proteins for Multimodal Sensing</a></strong></p>
+
+          <ul>
+            <li>Way above my head, honestly. Dialogue with Claude:
+              <ul>
+                <li>The team engineered a protein called <strong>MagLOV</strong> that contains a small molecule (flavin) which behaves quantum-mechanically when hit with light. Specifically, light excitation creates a &#8220;radical pair&#8221; &mdash; two molecules with unpaired electrons whose spins are entangled. Magnetic fields and radio waves alter how these spins evolve, which in turn changes how brightly the protein fluoresces.</li>
+                <li><strong>It works inside living cells, at room temperature, even at the single-cell level.</strong> Previous quantum biosensors needed frozen samples, purified proteins in test tubes, or other impractical conditions.</li>
+                <li><strong>They can &#8220;tune&#8221; it via directed evolution.</strong> By making random mutations and selecting the best performers, they made variants with different magnetic response speeds &mdash; like designing different flavors of the same sensor.</li>
+                <li><strong>They demonstrated four practical applications:</strong>
+                  <ul>
+                    <li><strong>Multiplexing:</strong> Different MagLOV variants respond to magnets at different speeds, so you can tell cell populations apart even when they glow the same color.</li>
+                    <li><strong>Lock-in detection:</strong> By toggling the magnet on/off, you can pull faint signals out of noisy backgrounds (useful in scattering tissue).</li>
+                    <li><strong>Microenvironment sensing:</strong> The protein&#8217;s response is dampened by nearby paramagnetic molecules (like gadolinium), so it can sense its chemical surroundings.</li>
+                    <li><strong>Fluorescence MRI:</strong> Because the resonance depends on the local magnetic field strength, gradient fields can be used to locate proteins in 3D space. They built a small device showing this works.</li>
+                  </ul>
+                </li>
+                <li><em>Yes, light (both the blue excitation light going in, and the green fluorescence coming out) doesn&#8217;t penetrate tissue well. It scatters, gets absorbed, and only reaches a few millimeters deep at best. So inside a mouse, let alone a human, you can&#8217;t easily shine light on a protein deep in an organ and collect its emission cleanly. This is a well-known limitation of all fluorescence-based imaging.</em></li>
+              </ul>
+            </li>
+          </ul>
+
+          <p><strong><a href="https://www.science.org/content/article/pigeons-sense-earth-s-magnetic-field-entirely-new-way" target="_blank" rel="noopener">Pigeons Sense Earth&#8217;s Magnetic Field in Entirely New Way</a></strong></p>
+
+          <ul>
+            <li>About pigeons; zoologist Camille Viguier speculated that birds navigate using magnetic fields way back in 1882. &#8220;He proposed that the field would induce tiny electric currents within the fluid of their inner ears, revealing direction like a compass needle&hellip;&#8221;
+              <ul><li>The <em>Science</em> paper basically lends support to this; it seems pigeons sense magnetic fields via electric currents in their inner ears.</li></ul>
+            </li>
+          </ul>
+
+          <p><strong><a href="https://elifesciences.org/articles/17210" target="_blank" rel="noopener">Physical Limits to Magnetogenetics</a></strong></p>
+
+          <ul>
+            <li>&#8220;Two other articles report magnetic control of membrane conductance by attaching ferritin to an ion channel protein and then tugging the ferritin or heating it with a magnetic field&hellip;Here I argue that these claims conflict with basic laws of physics. The discrepancies are large: from 5 to 10 log units.&#8221;</li>
+            <li>A single protein, with only 40 iron atoms, cannot possibly form a permanent dipole.</li>
+            <li>Attaching ferritin to a protein to &#8220;tug&#8221; it open is also presented as physically infeasible; you need a large number of atoms to make this work. &#8220;&hellip;this mechanism for pulling on ferritin seems at least 9 log units too weak to provide an explanation.&#8221;</li>
+          </ul>
+
+          <p><strong><a href="https://www.nature.com/articles/nmeth.4060" target="_blank" rel="noopener">Unraveling Magnetogenetics</a></strong></p>
+
+          <ul>
+            <li>A short commentary explaining Meister&#8217;s critique of the field.</li>
+          </ul>
+
+          <p><strong><a href="https://www.nature.com/articles/nmeth.3857" target="_blank" rel="noopener">Manipulating Neurons with Magnetogenetics</a></strong></p>
+
+          <ul>
+            <li>The ferritin &#8220;tug&#8221; paper, which has been heavily contested on physics grounds and has not been retracted.</li>
+          </ul>
+
+          <p><strong><a href="https://www.nature.com/articles/nmat4484" target="_blank" rel="noopener">A Magnetic Protein Biocompass</a></strong></p>
+
+          <ul>
+            <li>The physics of this paper was strongly challenged by the Meister analysis &mdash; the idea that a single protein complex could spontaneously align with magnetic fields runs into the same theoretical obstacles.</li>
+          </ul>
+
+          <p><strong><a href="https://www.nature.com/articles/nn.4265" target="_blank" rel="noopener">Genetically Targeted Magnetic Control of the Nervous System</a></strong></p>
+
+          <ul>
+            <li>Another paper whose proposed mechanism was challenged by the Meister analysis.</li>
+          </ul>
+
+          <p><strong><a href="https://www.nature.com/articles/nm.3730" target="_blank" rel="noopener">Remote Regulation of Glucose Homeostasis in Mice Using Genetically Encoded Nanoparticles</a></strong></p>
+
+          <ul>
+            <li>Also challenged on the same physics grounds.</li>
+          </ul>
+
+          <p><strong><a href="https://www.biorxiv.org/content/10.1101/2024.10.10.617626v2" target="_blank" rel="noopener">Weak Magnetic Field Effects in Biology Are Measurable &mdash; Accelerated Xenopus Embryogenesis in the Absence of the Geomagnetic Field</a></strong></p>
+
+          <p><strong><a href="https://cdn.prod.website-files.com/668e3c56070f06a24b7c06a0/69d9840ebf98e2bf36f53677_Escherichia_coli_K12_Exhibits_a_50_Longer_Lag_Phase.pdf" target="_blank" rel="noopener">Escherichia coli K12 Exhibits a 50% Longer Lag Phase Under a Weak Magnetic Field</a></strong></p>
+
+          <ul>
+            <li>This paper argues that weak magnetic fields (smaller in strength than Earth&#8217;s own magnetic field) are enough to statistically change the lag phase of <em>E. coli</em>.</li>
+            <li>Prior papers showed something similar in <em>Xenopus laevis</em>: <a href="https://www.biorxiv.org/content/10.1101/2024.10.10.617626v2.full.pdf" target="_blank" rel="noopener">Weak Magnetic Field Effects in Biology Are Measurable</a>.</li>
+            <li>There are several studies that show changes to <em>E. coli</em> growth in the presence of either strong or weak magnetic fields. <em>All</em> of the papers show a change &mdash; very strong magnetic fields decrease growth rates; tiny magnetic fields (19 nT) extend just the lag phase of growth in this paper. My question is: this effect seems real, but why would a single-celled organism evolve to sense magnetic fields at all? Or did they <em>not</em> evolve this, and it just happened by accident and was never selected <em>against</em>, because magnetic fields are roughly constant at Earth&#8217;s surface, between 20&ndash;65 nT?</li>
+          </ul>
+
+          <p><strong><a href="https://cdn.prod.website-files.com/668e3c56070f06a24b7c06a0/69965d8577c55b5295763a4c_Magnetic_field_dependent_fluorescence_of_MagLOV2_20260218.pdf" target="_blank" rel="noopener">Magnetic Field Dependent Fluorescence of MagLOV2</a></strong></p>
+
+          <ul>
+            <li>What is going on here? Why does the direction of change flip between magnetic fields of distinct strengths? There is some strange physics going on. And wouldn&#8217;t this make it difficult to build therapies that switch precisely in the right way? What if you accidentally turned the therapy off instead of on at the cancer site?</li>
+          </ul>
+
+          <figure>
+            <img src="../images/shortform/protein-magnets/sign-flip.png" alt="Two-panel figure from MagLOV2 paper. Panel A: magnetic field effect on fluorescence flips from positive (around +0.1%) at 0.5–1.5 mT to strongly negative (around −0.3%) at 2.0–2.5 mT. Panel B: representative fluorescence traces over time showing the 1.0 mT trace going positive while the 2.5 mT trace dips negative when the magnetic field turns on.">
+            <figcaption><strong>Fig. 2:</strong> The sign of the magnetic field effect flips as magnetic field strength varies at low fields, consistent with the radical pair quantum model. A) Mean calculated magnetic field effects for MagLOV2 expressing <em>E. coli</em> with applied magnetic fields at 0.5 mT, 1.0 mT, 1.5 mT, 2.0 mT, and 2.5 mT (one experiment at each condition, 74 colonies each). The error is expressed as the standard error of the mean, with fit error, variation of cycles, and biological variation propagated. B) Representative fluorescence trace of the same colony for 1.0 mT and 2.5 mT. The data are from a single plate with 74 colonies. A positive magnetic field effect in fluorescence upon application of the magnetic field is observed at 1.0 mT, whereas the effect is reversed to negative at 2.5 mT. The dashed line in both panels indicates the geofield baseline.</figcaption>
+          </figure>
+
+          <p><strong><a href="https://www.cell.com/biophysj/fulltext/S0006-3495(23)01786-1" target="_blank" rel="noopener">Mechanism of Magnetic Field-Dependent Photoswitching in a Fluorescent Protein</a></strong></p>
+
+          <ul>
+            <li>When the magnet comes <em>near</em>, the fluorescence decreases. When the magnet disappears, the fluorescence returns to baseline. Why does it happen this way and not the opposite? In other words, why doesn&#8217;t fluorescence increase in response to a magnetic field?</li>
+            <li>This works for fluorescence, but how do you then predictably transfer it to other applications, like the activity of an antibody?</li>
+          </ul>
+
+          <p><strong><a href="https://pubs.acs.org/doi/10.1021/jacs.5c03997" target="_blank" rel="noopener">Mechanism of Giant Magnetic Field Effect in a Red Fluorescent Protein</a></strong></p>
+
+          <ul>
+            <li>It seems like these molecules behave in distinct ways when in a living cell vs. when purified. When the fluorescent protein in this paper was removed from its cell, the authors had to add flavin and illuminate it with blue and yellow light to see the same effect. But again, it&#8217;s something to do with the flavin cofactor.</li>
+            <li>Human cells apparently don&#8217;t make flavin, so how would this work if you were to turn these magnetically controlled proteins into a therapy?</li>
+          </ul>
+
+        </div>
+      </main>
+
+      <footer>
+        <iframe src="https://nikomccarty.substack.com/embed?transparent=1&v=2" width="480" height="150" style="border: 0; background: transparent" frameborder="0" scrolling="no"></iframe>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Niko McCarty</span>
+          <span>
+            <a href="mailto:nsmccarty3@gmail.com">Email</a> &middot;
+            <a href="https://x.com/NikoMcCarty" target="_blank" rel="noopener">Twitter</a> &middot;
+            <a href="../feed.xml">RSS</a>
+          </span>
+        </div>
+      </footer>
+    </div>
+
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false,
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+    (function(){
+      var btn = document.querySelector('.translate-toggle');
+      var box = document.getElementById('google_translate_element');
+      if (!btn || !box) return;
+      var loaded = false;
+      btn.addEventListener('click', function(){
+        var open = box.hasAttribute('hidden') ? false : true;
+        if (open) {
+          box.setAttribute('hidden', '');
+          btn.setAttribute('aria-expanded', 'false');
+          return;
+        }
+        box.removeAttribute('hidden');
+        btn.setAttribute('aria-expanded', 'true');
+        if (!loaded) {
+          loaded = true;
+          var s = document.createElement('script');
+          s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+          document.body.appendChild(s);
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>
