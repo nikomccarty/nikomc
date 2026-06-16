@@ -1137,42 +1137,59 @@ footer a:hover { text-decoration: underline; }
 }
 
 /* ============================================================
-   Reading guide buttons
+   Reading guide buttons — cyberpunk / asimov aesthetic
    ============================================================ */
+.guide-list {
+  margin-top: 1.5rem;
+}
+
 .guide-btn {
   display: block;
   width: 100%;
-  padding: 1.4rem 1.25rem;
+  padding: 1.25rem 1.5rem;
   margin-bottom: 0.75rem;
-  border: 1px solid var(--border);
-  color: var(--text);
+  background: #000;
+  color: #b6fff5;
+  border: 2px solid #b6fff5;
+  border-radius: 10px;
   text-decoration: none;
-  font-family: var(--font-serif);
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.4;
-  transition: background 0.12s;
   box-sizing: border-box;
+  box-shadow: 4px 4px 0 #b6fff5;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
 }
 
 .guide-btn:hover {
-  background: var(--code-bg);
+  background: #b6fff5;
+  color: #000;
+  box-shadow: 0 0 2rem 2px #b6fff590;
   text-decoration: none;
 }
 
 .guide-btn-title {
   display: block;
   font-weight: 600;
+  letter-spacing: 0.01em;
 }
 
 .guide-btn-sub {
   display: block;
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-top: 0.2rem;
+  font-size: 0.82rem;
+  margin-top: 0.25rem;
+  opacity: 0.7;
   font-style: italic;
 }
 
 .guide-btn--disabled {
-  opacity: 0.45;
+  opacity: 0.4;
   cursor: default;
+  box-shadow: 2px 2px 0 #b6fff550;
+}
+
+.guide-btn--disabled:hover {
+  background: #000;
+  color: #b6fff5;
+  box-shadow: 2px 2px 0 #b6fff550;
 }
