@@ -1135,3 +1135,39 @@ footer a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .link-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   Reading guide buttons
+   ============================================================ */
+.guide-btn {
+  display: block;
+  width: 100%;
+  padding: 1.4rem 1.25rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.4;
+  transition: background 0.12s;
+  box-sizing: border-box;
+}
+
+.guide-btn:hover {
+  background: var(--code-bg);
+  text-decoration: none;
+}
+
+.guide-btn-title {
+  display: block;
+  font-weight: 600;
+}
+
+.guide-btn-sub {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+  font-style: italic;
+}
