@@ -1171,3 +1171,8 @@ footer a:hover { text-decoration: underline; }
   margin-top: 0.2rem;
   font-style: italic;
 }
+
+.guide-btn--disabled {
+  opacity: 0.45;
+  cursor: default;
+}
