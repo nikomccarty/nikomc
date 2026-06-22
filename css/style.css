@@ -1135,3 +1135,69 @@ footer a:hover { text-decoration: underline; }
 @media (max-width: 480px) {
   .link-grid { grid-template-columns: 1fr; }
 }
+
+/* ============================================================
+   Reading guide buttons
+   ============================================================ */
+.guide-list {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.guide-btn {
+  display: block;
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 2px solid currentColor;
+  border-radius: 14px;
+  text-decoration: none;
+  font-family: var(--font-prose);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-shadow: 4px 4px 0 currentColor;
+  transition: box-shadow 0.12s, transform 0.12s;
+}
+
+.guide-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 currentColor;
+  text-decoration: none;
+}
+
+.guide-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 currentColor;
+}
+
+.guide-btn-title {
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.guide-btn-sub {
+  display: block;
+  font-size: 0.78rem;
+  margin-top: 0.2rem;
+  opacity: 0.75;
+}
+
+/* Per-button color palettes */
+.guide-btn--1 { background: #fff8f0; color: #c75000; }   /* warm orange */
+.guide-btn--2 { background: #f0f7ff; color: #1a5fa8; }   /* cool blue   */
+.guide-btn--3 { background: #f2fff4; color: #1a7a36; }   /* fresh green */
+.guide-btn--4 { background: #fdf0ff; color: #7a1fa8; }   /* soft purple */
+.guide-btn--5 { background: #fff5f5; color: #a81a2e; }   /* warm red    */
+.guide-btn--6 { background: #fffbf0; color: #8a6200; }   /* amber       */
+
+.guide-btn--disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.guide-btn--disabled:hover {
+  transform: none;
+  box-shadow: 4px 4px 0 currentColor;
+}

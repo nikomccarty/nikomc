@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Niko McCarty — writing on biology.">
-  <title>Niko McCarty</title>
+  <meta name="description" content="Reading guides by Niko McCarty — curated reading lists on topics in biology.">
+  <title>Reading Guides — Niko McCarty</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <script>
-    /* Apply saved theme before CSS loads to prevent flash */
     (function(){var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);})();
   </script>
-  <link rel="alternate" type="application/rss+xml" title="Niko McCarty" href="/feed.xml">
   <link rel="stylesheet" href="css/style.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3J0ZM0DTYT"></script>
@@ -24,7 +22,6 @@
 <body>
   <div class="page">
 
-    <!-- ===================== SIDEBAR ===================== -->
     <aside class="sidebar">
       <div class="sidebar-inner">
         <div class="sidebar-top">
@@ -46,7 +43,7 @@
           <a href="writing.html">Published Writing</a>
           <a href="research.html">Research</a>
           <a href="bookshelf.html">Bookshelf</a>
-          <a href="reading-guides.html">Reading Guides</a>
+          <a href="reading-guides.html" class="active">Reading Guides</a>
           <a href="https://burrito.bio" target="_blank" rel="noopener">Book ↗</a>
           <a href="https://tinybio.netlify.app" target="_blank" rel="noopener">Microgrants ↗</a>
           <a href="https://www.youtube.com/channel/UCM1p08OWIP7nt_BOh-oBcNw" target="_blank" rel="noopener">Podcast ↗</a>
@@ -59,26 +56,41 @@
       </div>
     </aside>
 
-    <!-- ===================== CONTENT ===================== -->
     <div class="content">
       <main>
-        <p class="bio">
-          Writing on biology. Fellow at <a href="https://astera.org" target="_blank" rel="noopener">Astera Institute</a>. Founding editor at <a href="https://asimov.press" target="_blank" rel="noopener">Asimov Press</a>.
-          Previously at Caltech, NYU, and MIT.
-        </p>
+        <p class="section-label">Reading Guides</p>
 
-        <iframe src="https://nikomccarty.substack.com/embed?transparent=1&v=2" width="480" height="150" style="border: 0; background: transparent" frameborder="0" scrolling="no"></iframe>
+        <div class="guide-list">
+          <a href="https://read.asimov.com" target="_blank" rel="noopener" class="guide-btn guide-btn--1">
+            <span class="guide-btn-title">Read Something Wonderful (About Biology)</span>
+            <span class="guide-btn-sub">Excellent essays about biology, from all over the Internet</span>
+          </a>
 
-        <p class="section-label">Recent writing</p>
+          <a href="https://www.asimov.press/p/synbio-guide" target="_blank" rel="noopener" class="guide-btn guide-btn--2">
+            <span class="guide-btn-title">The Codon Guide to Synthetic Biology</span>
+            <span class="guide-btn-sub">Papers, reviews, and essays about synthetic biology, filtered by application</span>
+          </a>
 
-        <ul class="post-list" id="post-list-home">
-          <!-- populated by main.js from essays.html + shortform.html -->
-        </ul>
+          <a href="https://x.com/NikoMcCarty/status/1677739329932902401" target="_blank" rel="noopener" class="guide-btn guide-btn--3">
+            <span class="guide-btn-title">30 Days of Great Biology Papers</span>
+            <span class="guide-btn-sub">Summaries of classic papers, mostly in molecular biology</span>
+          </a>
 
-        <p style="margin-top:1.5rem; font-size:0.85rem; font-family:var(--font-mono);">
-          <a href="essays.html">Essays &rarr;</a> &nbsp;&nbsp;
-          <a href="shortform.html">Shortform &rarr;</a>
-        </p>
+          <span class="guide-btn guide-btn--4 guide-btn--disabled">
+            <span class="guide-btn-title">A Reading Guide to China</span>
+            <span class="guide-btn-sub">Coming soon</span>
+          </span>
+
+          <span class="guide-btn guide-btn--5 guide-btn--disabled">
+            <span class="guide-btn-title">The Church of George Church</span>
+            <span class="guide-btn-sub">Coming soon</span>
+          </span>
+
+          <span class="guide-btn guide-btn--6 guide-btn--disabled">
+            <span class="guide-btn-title">Classic Papers in Molecular Biology</span>
+            <span class="guide-btn-sub">Coming soon</span>
+          </span>
+        </div>
       </main>
 
       <footer>
