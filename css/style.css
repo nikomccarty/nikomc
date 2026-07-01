@@ -474,7 +474,8 @@ h3 { font-size: 1rem;    margin-bottom: 0.4rem; margin-top: 1.8rem; }
 
 .post-body li { margin-bottom: 0.35rem; }
 
-.post-body img {
+.post-body img,
+.post-body video {
   max-width: 100%;
   height: auto;
   display: block;
@@ -482,6 +483,13 @@ h3 { font-size: 1rem;    margin-bottom: 0.4rem; margin-top: 1.8rem; }
 }
 
 .post-body figure { margin: 2rem 0; }
+
+.subscribe-embed {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0;
+}
+.subscribe-embed iframe { max-width: 100%; }
 
 .post-body figcaption {
   text-align: center;
