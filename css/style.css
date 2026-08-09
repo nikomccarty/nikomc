@@ -276,6 +276,70 @@ h3 { font-size: 1rem;    margin-bottom: 0.4rem; margin-top: 1.8rem; }
   font-family: var(--font-mono);
 }
 
+/* Microgrants — expandable recipient list */
+.grant-list {
+  margin-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.grant {
+  border-bottom: 1px solid var(--border);
+}
+
+.grant > summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.85rem 0.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.grant > summary::-webkit-details-marker { display: none; }
+
+.grant > summary::before {
+  content: "\203A";
+  display: inline-block;
+  margin-right: 0.6rem;
+  color: var(--muted);
+  transition: transform 0.15s ease;
+  transform: translateY(-1px);
+}
+.grant[open] > summary::before {
+  transform: translateY(-1px) rotate(90deg);
+}
+
+.grant > summary:hover .grant-name { color: var(--link-hover); }
+
+.grant-name {
+  flex: 1;
+  font-weight: 700;
+}
+
+.grant-amount {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.grant-details {
+  padding: 0 0.25rem 1.1rem 1.5rem;
+  color: var(--muted);
+}
+.grant-details p { margin: 0; }
+.grant-details p + p { margin-top: 0.6rem; }
+
+.grant-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  opacity: 0.75;
+}
+
 /* Post list (homepage + listing pages) */
 .post-list {
   list-style: none;
